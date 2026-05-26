@@ -3028,13 +3028,34 @@
         height: 124px;
       }
 
-      .marquee-track {
-        gap: 18px;
-        animation-duration: 14s;
-      }
-
+      /* On mobile, swap auto-marquee for native horizontal swipe-scroll */
       .marquee {
         margin-top: 32px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        touch-action: pan-x;
+        cursor: default;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        scroll-snap-type: x proximity;
+        mask-image: none;
+        -webkit-mask-image: none;
+        padding: 0 20px;
+      }
+      .marquee::-webkit-scrollbar { display: none; }
+
+      .marquee-track {
+        gap: 18px;
+        animation: none !important;
+        transform: none !important;
+      }
+
+      .marquee .creator-circle {
+        scroll-snap-align: start;
+      }
+
+      .marquee img {
+        pointer-events: auto;
       }
 
       .press-track {
@@ -3753,6 +3774,9 @@
         var marquee = document.querySelector(".creators-marquee .marquee");
         var track = marquee && marquee.querySelector(".marquee-track");
         if (!marquee || !track) return;
+
+        // On mobile we use native horizontal scroll instead of JS drag-to-pan.
+        if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches) return;
 
         var DURATION = 30; // seconds — must match CSS animation duration
         var dragging = false;

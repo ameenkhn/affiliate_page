@@ -1154,9 +1154,25 @@
       }
 
       .stats-strip {
-        gap: 10px;
-        font-size: 14px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 14px;
+        font-size: 13.5px;
+        text-align: center;
+      }
+
+      .stats-strip > [role="listitem"] {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        line-height: 1.25;
+      }
+
+      .stats-strip > [role="listitem"] strong {
+        margin-right: 0;
+        font-size: 16px;
       }
 
       .stats-strip .sep {
@@ -1279,7 +1295,11 @@
         text-align: center;
       }
       .resp-list {
-        align-items: center;
+        align-items: flex-start;
+        width: fit-content;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
       }
       .resp-list li {
         text-align: left;
@@ -3128,29 +3148,8 @@
     }
     .reels > * { position: relative; z-index: 1; }
 
-    .reels-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      font-size: 11.5px;
-      font-weight: 700;
-      color: var(--exly-purple);
-      background: rgba(73, 58, 177, 0.08);
-      padding: 8px 16px 8px 14px;
-      border-radius: 100px;
-      margin-bottom: 18px;
-      border: 1px solid rgba(73, 58, 177, 0.14);
-    }
-    .reels-kicker::before {
-      content: "";
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--exly-purple);
-      box-shadow: 0 0 0 4px rgba(73, 58, 177, 0.18);
-    }
     .reels-head { text-align: center; margin-bottom: 8px; }
+    .reels-eyebrow { margin: 0 0 14px; }
     .reels-head .section-heading { margin-inline: auto; }
     .reels-head .section-sub { margin-inline: auto; max-width: 620px; }
 
@@ -5052,7 +5051,7 @@
     <section id="reels" class="reels" aria-labelledby="reels-heading">
       <div class="container">
         <div class="reels-head">
-          <span class="reels-kicker">Creator stories</span>
+          <p class="creators-eyebrow reels-eyebrow"><span class="eyebrow-bar" aria-hidden="true"></span>Creator stories</p>
           <h2 id="reels-heading" class="section-heading center">Don't just take our word for it.</h2>
           <p class="section-sub center">Real educators. Real results. Straight from the people inside their communities.</p>
         </div>

@@ -3057,7 +3057,6 @@
         cursor: default;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        scroll-snap-type: x proximity;
         mask-image: none;
         -webkit-mask-image: none;
         padding: 0 20px;
@@ -3068,10 +3067,6 @@
         gap: 18px;
         animation: none !important;
         transform: none !important;
-      }
-
-      .marquee .creator-circle {
-        scroll-snap-align: start;
       }
 
       .marquee img {
@@ -3774,8 +3769,42 @@
         var track = marquee && marquee.querySelector(".marquee-track");
         if (!marquee || !track) return;
 
-        // On mobile we use native horizontal scroll instead of JS drag-to-pan.
-        if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches) return;
+        // On mobile we use native horizontal scroll + a JS-driven auto-advance
+        // that increments scrollLeft each frame and pauses while the user is touching.
+        if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches) {
+          var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          if (reduceMotion) return;
+
+          var SPEED = 0.7; // px per frame (~42px/s at 60fps)
+          var RESUME_DELAY = 1400; // ms after user lifts finger
+          var paused = false;
+          var resumeTimer = null;
+
+          function mPause() {
+            paused = true;
+            if (resumeTimer) { clearTimeout(resumeTimer); resumeTimer = null; }
+          }
+          function mScheduleResume() {
+            if (resumeTimer) clearTimeout(resumeTimer);
+            resumeTimer = setTimeout(function () { paused = false; }, RESUME_DELAY);
+          }
+
+          marquee.addEventListener("touchstart", mPause, { passive: true });
+          marquee.addEventListener("touchend", mScheduleResume, { passive: true });
+          marquee.addEventListener("touchcancel", mScheduleResume, { passive: true });
+
+          function mTick() {
+            if (!paused) {
+              var half = track.getBoundingClientRect().width / 2;
+              var next = marquee.scrollLeft + SPEED;
+              if (half && next >= half) next -= half;
+              marquee.scrollLeft = next;
+            }
+            requestAnimationFrame(mTick);
+          }
+          requestAnimationFrame(mTick);
+          return;
+        }
 
         var DURATION = 30; // seconds — must match CSS animation duration
         var dragging = false;
@@ -5147,6 +5176,7 @@
                 <span class="play-btn"></span>
               </div>
               <div class="reel-overlay">
+                <div class="reel-overlay-name">Bodhi School of Yoga</div>
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
                   <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>

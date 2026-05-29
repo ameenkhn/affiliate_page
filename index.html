@@ -3167,32 +3167,15 @@
         height: 124px;
       }
 
-      /* On mobile, swap auto-marquee for native horizontal swipe-scroll */
+      /* On mobile, keep the transform-based CSS auto-marquee (with drag-to-pan).
+         Native scrollLeft auto-advance is unreliable on iOS Safari. */
       .marquee {
         margin-top: 32px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        touch-action: pan-x;
-        cursor: default;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        mask-image: none;
-        -webkit-mask-image: none;
         padding: 0 20px;
-      }
-
-      .marquee::-webkit-scrollbar {
-        display: none;
       }
 
       .marquee-track {
         gap: 18px;
-        animation: none !important;
-        transform: none !important;
-      }
-
-      .marquee img {
-        pointer-events: auto;
       }
 
       .press-track {
@@ -4284,51 +4267,10 @@
         var track = marquee && marquee.querySelector(".marquee-track");
         if (!marquee || !track) return;
 
-        // On mobile we use native horizontal scroll + a JS-driven auto-advance
-        // that increments scrollLeft each frame and pauses while the user is touching.
-        if (window.matchMedia && window.matchMedia("(max-width: 640px)").matches) {
-          var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-          if (reduceMotion) return;
-
-          var SPEED = 0.7; // px per frame (~42px/s at 60fps)
-          var RESUME_DELAY = 1400; // ms after user lifts finger
-          var paused = false;
-          var resumeTimer = null;
-          // Track the position in a float ourselves: mobile browsers (iOS Safari
-          // especially) round scrollLeft, so sub-pixel increments would be
-          // truncated to 0 every frame and the marquee would never advance.
-          var pos = marquee.scrollLeft || 0;
-
-          function mPause() {
-            paused = true;
-            if (resumeTimer) { clearTimeout(resumeTimer); resumeTimer = null; }
-          }
-          function mScheduleResume() {
-            if (resumeTimer) clearTimeout(resumeTimer);
-            resumeTimer = setTimeout(function () {
-              // Resume from wherever the user left off after a manual swipe.
-              pos = marquee.scrollLeft;
-              paused = false;
-            }, RESUME_DELAY);
-          }
-
-          marquee.addEventListener("touchstart", mPause, { passive: true });
-          marquee.addEventListener("touchend", mScheduleResume, { passive: true });
-          marquee.addEventListener("touchcancel", mScheduleResume, { passive: true });
-
-          function mTick() {
-            if (!paused) {
-              var half = track.getBoundingClientRect().width / 2;
-              pos += SPEED;
-              if (half && pos >= half) pos -= half;
-              marquee.scrollLeft = pos;
-            }
-            requestAnimationFrame(mTick);
-          }
-          requestAnimationFrame(mTick);
-          return;
-        }
-
+        // One unified path for all widths: the CSS keyframe animation drives the
+        // auto-scroll (transform-based, GPU-composited — reliable on iOS, unlike
+        // programmatic scrollLeft), and pointer events handle drag-to-pan on both
+        // mouse and touch.
         var DURATION = 30; // seconds — must match CSS animation duration
         var dragging = false;
         var pointerId = null;

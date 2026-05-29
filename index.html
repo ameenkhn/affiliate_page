@@ -4294,6 +4294,10 @@
           var RESUME_DELAY = 1400; // ms after user lifts finger
           var paused = false;
           var resumeTimer = null;
+          // Track the position in a float ourselves: mobile browsers (iOS Safari
+          // especially) round scrollLeft, so sub-pixel increments would be
+          // truncated to 0 every frame and the marquee would never advance.
+          var pos = marquee.scrollLeft || 0;
 
           function mPause() {
             paused = true;
@@ -4301,7 +4305,11 @@
           }
           function mScheduleResume() {
             if (resumeTimer) clearTimeout(resumeTimer);
-            resumeTimer = setTimeout(function () { paused = false; }, RESUME_DELAY);
+            resumeTimer = setTimeout(function () {
+              // Resume from wherever the user left off after a manual swipe.
+              pos = marquee.scrollLeft;
+              paused = false;
+            }, RESUME_DELAY);
           }
 
           marquee.addEventListener("touchstart", mPause, { passive: true });
@@ -4311,9 +4319,9 @@
           function mTick() {
             if (!paused) {
               var half = track.getBoundingClientRect().width / 2;
-              var next = marquee.scrollLeft + SPEED;
-              if (half && next >= half) next -= half;
-              marquee.scrollLeft = next;
+              pos += SPEED;
+              if (half && pos >= half) pos -= half;
+              marquee.scrollLeft = pos;
             }
             requestAnimationFrame(mTick);
           }

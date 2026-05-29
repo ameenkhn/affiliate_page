@@ -4,39 +4,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <title>Exly Partner Program — Earn with India's super app for creators</title>
+  <title>Exly Partner Program | Earn with India's super app for creators</title>
   <style id="x-overflow-guard">
-  html, body { max-width: 100%; overflow-x: hidden; }
-  body { position: relative; }
-  @media (max-width: 960px) {
-    html, body { width: 100% !important; max-width: 100vw !important; overflow-x: hidden !important; }
-    main, header, footer, section, .container { max-width: 100% !important; overflow-x: hidden; }
-    /* Never let any element exceed its container */
-    main *, header *, footer *, section * {
+    html,
+    body {
       max-width: 100%;
+      overflow-x: hidden;
     }
-    /* Common offenders: ensure media + pre + table don't blow out the row */
-    img, svg, video, iframe, picture, canvas { max-width: 100%; height: auto; }
-    pre, code, table { max-width: 100%; overflow: auto; }
-    /* Heading words shouldn't be unbreakable */
-    h1, h2, h3, h4, p { word-break: break-word; overflow-wrap: anywhere; }
-  }
-</style>
+
+    body {
+      position: relative;
+    }
+
+    @media (max-width: 960px) {
+
+      html,
+      body {
+        width: 100% !important;
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+      }
+
+      main,
+      header,
+      footer,
+      section,
+      .container {
+        max-width: 100% !important;
+        overflow-x: hidden;
+      }
+
+      /* Never let any element exceed its container */
+      main *,
+      header *,
+      footer *,
+      section * {
+        max-width: 100%;
+      }
+
+      /* Common offenders: ensure media + pre + table don't blow out the row */
+      img,
+      svg,
+      video,
+      iframe,
+      picture,
+      canvas {
+        max-width: 100%;
+        height: auto;
+      }
+
+      pre,
+      code,
+      table {
+        max-width: 100%;
+        overflow: auto;
+      }
+
+      /* Heading words shouldn't be unbreakable */
+      h1,
+      h2,
+      h3,
+      h4,
+      p {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+      }
+    }
+  </style>
   <meta name="description"
-    content="Earn recurring commissions by introducing your community to Exly — the super app that maximises profits for coaches, creators, and educators. 100,000+ creators strong. 1 crore+ courses sold. Backed by Chiratae Ventures. Y Combinator alum." />
+    content="Earn recurring commissions by introducing your community to Exly, the super app that maximises profits for coaches, creators, and educators. 100,000+ creators strong. 1 crore+ courses sold. Backed by Chiratae Ventures. Y Combinator alum." />
   <meta name="author" content="Exly" />
 
   <meta property="og:title" content="Exly Partner Program" />
   <meta property="og:description"
-    content="A partnership built on shared outcomes. Earn recurring commissions by introducing your community to Exly — the super app that maximises profits for coaches, creators, and educators." />
+    content="A partnership built on shared outcomes. Earn recurring commissions by introducing your community to Exly, the super app that maximises profits for coaches, creators, and educators." />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
 
-  <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="%23493AB1"/><text x="50%25" y="55%25" text-anchor="middle" dominant-baseline="middle" font-family="Inter,Arial,sans-serif" font-weight="800" font-size="20" fill="%23fff">E</text></svg>' />
+  <link rel="icon" type="image/jpeg" href="assets/embedded/6f7f6954de9fdf2ef6694c4de531c8bf791d772d.jpg" />
+  <link rel="apple-touch-icon" href="assets/embedded/6f7f6954de9fdf2ef6694c4de531c8bf791d772d.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800&display=swap"
+    rel="stylesheet" />
   <style>
     /* =========================================================
    Exly — Partner Program Brand system
@@ -105,12 +157,12 @@
     }
 
     /* Prevent flex/grid children from refusing to shrink past their content */
-    .hero-grid > *,
+    .hero-grid>*,
     .hero-copy,
-    .cta-row > *,
-    .hero-stats > *,
-    .hero-trust-row > *,
-    .footer-row > * {
+    .cta-row>*,
+    .hero-stats>*,
+    .hero-trust-row>*,
+    .footer-row>* {
       min-width: 0;
     }
 
@@ -700,7 +752,7 @@
     }
 
     .how-cta-row {
-      margin-top: 56px;
+      margin-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -726,7 +778,7 @@
     .tracks-row {
       margin-top: 56px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
@@ -857,13 +909,33 @@
    06 — FINAL CTA
    ========================================================= */
     .final-cta {
-      background: var(--exly-purple);
+      background: linear-gradient(180deg, var(--exly-purple) 0%, var(--exly-purple-700) 100%);
       color: var(--white);
       padding: clamp(72px, 9vw, 120px) 0;
     }
 
     .final-cta-inner {
       text-align: center;
+    }
+
+    .final-cta-logo {
+      display: block;
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      margin: 0 auto 24px;
+      box-shadow:
+        0 0 0 1px rgba(255, 255, 255, 0.12),
+        0 12px 28px -10px rgba(0, 0, 0, 0.35);
+    }
+
+    @media (max-width: 640px) {
+      .final-cta-logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 14px;
+        margin-bottom: 18px;
+      }
     }
 
     .on-dark {
@@ -890,7 +962,7 @@
       margin-top: 20px;
       font-size: 19px;
       color: rgba(255, 255, 255, .85);
-      max-width: 640px;
+      max-width: none;
       margin-inline: auto;
     }
 
@@ -1153,24 +1225,27 @@
 
       .stats-strip {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 16px;
-        row-gap: 14px;
-        font-size: 13.5px;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 8px;
+        row-gap: 0;
+        font-size: 10.5px;
         text-align: center;
+        padding: 16px 0;
       }
 
-      .stats-strip > [role="listitem"] {
+      .stats-strip>[role="listitem"] {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2px;
-        line-height: 1.25;
+        gap: 3px;
+        line-height: 1.2;
+        min-width: 0;
       }
 
-      .stats-strip > [role="listitem"] strong {
+      .stats-strip>[role="listitem"] strong {
         margin-right: 0;
-        font-size: 16px;
+        font-size: 13.5px;
+        white-space: nowrap;
       }
 
       .stats-strip .sep {
@@ -1192,41 +1267,51 @@
       .hero {
         text-align: center;
       }
+
       .hero-copy {
         text-align: center;
       }
+
       .hero-copy .eyebrow,
       .creators-eyebrow,
       .press-label {
         margin-inline: auto;
       }
+
       .hero-copy .display,
       .hero-copy .lede {
         margin-inline: auto;
       }
+
       .cta-row,
       .how-cta-row {
         justify-content: center;
       }
+
       .hero-stats {
         justify-content: center;
         margin-inline: auto;
       }
+
       .hero-stat {
         flex: 1 1 auto;
         justify-content: center;
         min-width: 130px;
       }
+
       .hero-trust-row {
         justify-content: center;
         text-align: center;
       }
+
       .hero-trust-text {
         align-items: center;
       }
+
       .trusted-icons {
         justify-content: center;
       }
+
       .section-heading,
       .section-sub,
       .why-heading,
@@ -1234,35 +1319,43 @@
         margin-inline: auto;
         text-align: center;
       }
+
       /* center inline-flex eyebrows by centering their container */
-      .creators-marquee > .container,
+      .creators-marquee>.container,
       .how-it-works .container,
       .why .container,
       .trust-grid {
         text-align: center;
       }
+
       .how-it-works .eyebrow {
         display: inline-block;
       }
+
       .why-cards {
         justify-items: center;
       }
+
       .why-card {
         text-align: center;
       }
+
       .why-card-head {
         justify-content: center;
         flex-direction: column;
         align-items: center;
         gap: 12px;
       }
+
       .why-card-title,
       .why-card-body {
         text-align: center;
       }
+
       .creators-categories {
         display: none;
       }
+
       .footer-brand,
       .footer-meta {
         align-items: center;
@@ -1273,25 +1366,31 @@
       .steps {
         justify-items: center;
       }
+
       .step {
         text-align: center;
         padding-right: 0;
         max-width: 320px;
       }
+
       .step-num {
         margin-inline: auto;
       }
+
       .step-day,
       .step-title,
       .step-body {
         text-align: center;
       }
+
       .resp-card {
         text-align: center;
       }
+
       .resp-card .resp-heading {
         text-align: center;
       }
+
       .resp-list {
         align-items: flex-start;
         width: fit-content;
@@ -1299,17 +1398,21 @@
         margin-left: auto;
         margin-right: auto;
       }
+
       .resp-list li {
         text-align: left;
         max-width: 280px;
       }
+
       /* press marquee fade pads stay; nothing to center there */
       .tracks-row {
         justify-items: center;
       }
+
       .track {
         max-width: 320px;
       }
+
       /* belt-and-suspenders against horizontal scroll on mobile */
       main,
       section,
@@ -1318,7 +1421,11 @@
         max-width: 100vw;
         overflow-x: hidden;
       }
-      img, svg, video, iframe {
+
+      img,
+      svg,
+      video,
+      iframe {
         max-width: 100%;
         height: auto;
       }
@@ -1408,10 +1515,12 @@
       box-shadow: 0 10px 22px -14px rgba(40, 36, 110, .45);
     }
 
-    .integrations-stage .badge svg {
+    .integrations-stage .badge svg,
+    .integrations-stage .badge img {
       width: var(--gs, 58%);
       height: var(--gs, 58%);
       display: block;
+      object-fit: contain;
     }
 
     @media (max-width: 960px) {
@@ -2041,7 +2150,7 @@
    ========================================================= */
     .why-join {
       position: relative;
-      background: #0a0a14;
+      background: linear-gradient(180deg, #1B1340 0%, #0E0824 100%);
       color: var(--white);
       padding: clamp(72px, 9vw, 120px) 0;
       overflow: hidden;
@@ -2102,7 +2211,7 @@
     }
 
     .why-heading em {
-      background: linear-gradient(120deg, #a78bfa 0%, #6ea8ff 100%);
+      background: linear-gradient(120deg, #FCD34D 0%, #F472B6 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -2111,7 +2220,7 @@
     .why-sub {
       margin-top: 18px;
       font-size: 18px;
-      color: rgba(255, 255, 255, 0.72);
+      color: rgba(255, 255, 255, 0.82);
       max-width: 640px;
       margin-inline: auto;
     }
@@ -2148,8 +2257,8 @@
       position: relative;
       padding: 28px 26px;
       border-radius: 20px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0.04) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
       overflow: hidden;
@@ -2222,7 +2331,7 @@
     .why-card-body {
       font-size: 14.5px;
       line-height: 1.6;
-      color: rgba(255, 255, 255, 0.7);
+      color: rgba(255, 255, 255, 0.82);
       flex-grow: 1;
     }
 
@@ -2852,6 +2961,7 @@
       animation: creators-scroll 30s linear infinite;
       will-change: transform;
     }
+
     .marquee img {
       /* Prevent native image drag from hijacking the pointer before our handler runs. */
       -webkit-user-drag: none;
@@ -2863,12 +2973,19 @@
     }
 
     @keyframes creators-scroll {
-      from { transform: translate3d(0, 0, 0); }
-      to   { transform: translate3d(-50%, 0, 0); }
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(-50%, 0, 0);
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .marquee-track { animation: none; }
+      .marquee-track {
+        animation: none;
+      }
     }
 
     .marquee.is-dragging .creator-circle,
@@ -3006,7 +3123,9 @@
       -webkit-overflow-scrolling: touch;
     }
 
-    .categories-row::-webkit-scrollbar { display: none; }
+    .categories-row::-webkit-scrollbar {
+      display: none;
+    }
 
     .categories-row li {
       flex: 0 0 auto;
@@ -3031,6 +3150,7 @@
       .creator-circle {
         width: 150px;
       }
+
       .creator-photo {
         width: 150px;
         height: 150px;
@@ -3041,6 +3161,7 @@
       .creator-circle {
         width: 124px;
       }
+
       .creator-photo {
         width: 124px;
         height: 124px;
@@ -3059,7 +3180,10 @@
         -webkit-mask-image: none;
         padding: 0 20px;
       }
-      .marquee::-webkit-scrollbar { display: none; }
+
+      .marquee::-webkit-scrollbar {
+        display: none;
+      }
 
       .marquee-track {
         gap: 18px;
@@ -3127,6 +3251,7 @@
       overflow: hidden;
       isolation: isolate;
     }
+
     .reels::before {
       content: "";
       position: absolute;
@@ -3134,17 +3259,34 @@
       background-image: radial-gradient(circle at 1px 1px, rgba(73, 58, 177, 0.07) 1px, transparent 0);
       background-size: 24px 24px;
       -webkit-mask-image: radial-gradient(70% 60% at 50% 30%, #000 40%, transparent 100%);
-              mask-image: radial-gradient(70% 60% at 50% 30%, #000 40%, transparent 100%);
+      mask-image: radial-gradient(70% 60% at 50% 30%, #000 40%, transparent 100%);
       pointer-events: none;
       opacity: 0.55;
       z-index: 0;
     }
-    .reels > * { position: relative; z-index: 1; }
 
-    .reels-head { text-align: center; margin-bottom: 8px; }
-    .reels-eyebrow { margin: 0 0 14px; }
-    .reels-head .section-heading { margin-inline: auto; }
-    .reels-head .section-sub { margin-inline: auto; max-width: 620px; }
+    .reels>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .reels-head {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .reels-eyebrow {
+      margin: 0 0 14px;
+    }
+
+    .reels-head .section-heading {
+      margin-inline: auto;
+    }
+
+    .reels-head .section-sub {
+      margin-inline: auto;
+      max-width: 620px;
+    }
 
     .reels-stage-wrap {
       position: relative;
@@ -3163,7 +3305,10 @@
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
     }
-    .reels-stage::-webkit-scrollbar { display: none; }
+
+    .reels-stage::-webkit-scrollbar {
+      display: none;
+    }
 
     .reel-card {
       flex: 0 0 330px;
@@ -3175,6 +3320,7 @@
       cursor: pointer;
       outline: none;
     }
+
     .reel-media {
       position: relative;
       width: 100%;
@@ -3186,18 +3332,20 @@
       opacity: 0.45;
       filter: saturate(0.7) brightness(0.85);
       transition:
-        transform .55s cubic-bezier(.2,.75,.2,1),
+        transform .55s cubic-bezier(.2, .75, .2, 1),
         opacity .55s ease,
         filter .55s ease,
         box-shadow .55s ease;
       box-shadow: 0 10px 28px -16px rgba(2, 0, 14, 0.45);
     }
+
     .reel-card:focus-visible .reel-media {
       box-shadow:
         0 0 0 3px var(--white),
         0 0 0 6px var(--exly-purple),
         0 30px 70px -25px rgba(73, 58, 177, 0.45);
     }
+
     .reel-card.is-focused .reel-media {
       transform: scale(1);
       opacity: 1;
@@ -3207,6 +3355,7 @@
         0 36px 80px -28px rgba(73, 58, 177, 0.45),
         0 18px 36px -16px rgba(2, 0, 14, 0.3);
     }
+
     .reel-media video {
       width: 100%;
       height: 100%;
@@ -3214,6 +3363,7 @@
       display: block;
       pointer-events: none;
     }
+
     /* Inner highlight rim — phone-frame feel */
     .reel-media::before {
       content: "";
@@ -3226,6 +3376,7 @@
       pointer-events: none;
       z-index: 3;
     }
+
     /* Bottom darken for legibility of overlays */
     .reel-media::after {
       content: "";
@@ -3236,7 +3387,10 @@
       transition: opacity .25s ease;
       z-index: 1;
     }
-    .reel-card.is-playing .reel-media::after { opacity: 0.4; }
+
+    .reel-card.is-playing .reel-media::after {
+      opacity: 0.4;
+    }
 
     /* Name + role + 5-star overlay over the video */
     .reel-overlay {
@@ -3248,12 +3402,14 @@
       color: #fff;
       pointer-events: none;
     }
+
     .reel-overlay-name {
       font-size: 17px;
       font-weight: 800;
       letter-spacing: -0.01em;
       line-height: 1.2;
     }
+
     .reel-overlay-role {
       font-size: 12.5px;
       font-weight: 500;
@@ -3261,14 +3417,20 @@
       margin-top: 3px;
       letter-spacing: 0.01em;
     }
+
     .reel-stars {
       display: inline-flex;
       gap: 2px;
       margin-top: 8px;
       color: #FFC83D;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
     }
-    .reel-stars svg { width: 13px; height: 13px; fill: currentColor; }
+
+    .reel-stars svg {
+      width: 13px;
+      height: 13px;
+      fill: currentColor;
+    }
 
     /* Testimonial quote under each card — only fully visible on focused card */
     .reel-quote {
@@ -3282,14 +3444,17 @@
       text-align: center;
       opacity: 0.5;
       transform: translateY(-6px);
-      transition: opacity .45s ease, transform .45s cubic-bezier(.2,.75,.2,1);
+      transition: opacity .45s ease, transform .45s cubic-bezier(.2, .75, .2, 1);
     }
+
     .reel-card.is-focused .reel-quote {
       opacity: 1;
       transform: translateY(0);
     }
 
-    .reel-badge { display: none; }
+    .reel-badge {
+      display: none;
+    }
 
     .reel-mute {
       position: absolute;
@@ -3300,7 +3465,7 @@
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.16);
       -webkit-backdrop-filter: blur(14px) saturate(150%);
-              backdrop-filter: blur(14px) saturate(150%);
+      backdrop-filter: blur(14px) saturate(150%);
       border: 1px solid rgba(255, 255, 255, 0.2);
       color: #fff;
       display: grid;
@@ -3310,15 +3475,38 @@
       z-index: 4;
       opacity: 0;
       transform: scale(0.85);
-      transition: opacity .35s ease, transform .35s cubic-bezier(.2,.75,.2,1), background .2s ease;
+      transition: opacity .35s ease, transform .35s cubic-bezier(.2, .75, .2, 1), background .2s ease;
     }
-    .reel-card.is-focused .reel-mute { opacity: 1; transform: scale(1); }
-    .reel-mute:hover { background: rgba(255, 255, 255, 0.28); }
-    .reel-mute:active { transform: scale(0.94); }
-    .reel-mute svg { width: 16px; height: 16px; }
-    .reel-mute .icon-unmuted { display: none; }
-    .reel-card.is-unmuted .reel-mute .icon-muted { display: none; }
-    .reel-card.is-unmuted .reel-mute .icon-unmuted { display: block; }
+
+    .reel-card.is-focused .reel-mute {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .reel-mute:hover {
+      background: rgba(255, 255, 255, 0.28);
+    }
+
+    .reel-mute:active {
+      transform: scale(0.94);
+    }
+
+    .reel-mute svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .reel-mute .icon-unmuted {
+      display: none;
+    }
+
+    .reel-card.is-unmuted .reel-mute .icon-muted {
+      display: none;
+    }
+
+    .reel-card.is-unmuted .reel-mute .icon-unmuted {
+      display: block;
+    }
 
     /* Center play affordance — only on focused card */
     .reel-play {
@@ -3330,10 +3518,19 @@
       z-index: 2;
       opacity: 0;
       transform: scale(0.7);
-      transition: opacity .4s ease, transform .4s cubic-bezier(.2,.75,.2,1);
+      transition: opacity .4s ease, transform .4s cubic-bezier(.2, .75, .2, 1);
     }
-    .reel-card.is-focused .reel-play { opacity: 1; transform: scale(1); }
-    .reel-card.is-focused.is-playing .reel-play { opacity: 0; transform: scale(0.85); }
+
+    .reel-card.is-focused .reel-play {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .reel-card.is-focused.is-playing .reel-play {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+
     .reel-play .play-pulse {
       position: absolute;
       width: 80px;
@@ -3342,10 +3539,19 @@
       background: rgba(255, 255, 255, 0.18);
       animation: reelPulse 2.4s ease-out infinite;
     }
+
     @keyframes reelPulse {
-      0%   { transform: scale(0.85); opacity: 0.75; }
-      100% { transform: scale(1.65); opacity: 0; }
+      0% {
+        transform: scale(0.85);
+        opacity: 0.75;
+      }
+
+      100% {
+        transform: scale(1.65);
+        opacity: 0;
+      }
     }
+
     .reel-play .play-btn {
       position: relative;
       z-index: 1;
@@ -3357,9 +3563,11 @@
       place-items: center;
       box-shadow: 0 14px 32px -10px rgba(0, 0, 0, 0.45);
     }
+
     .reel-play .play-btn::before {
       content: "";
-      width: 0; height: 0;
+      width: 0;
+      height: 0;
       border-left: 18px solid var(--exly-purple-bright);
       border-top: 12px solid transparent;
       border-bottom: 12px solid transparent;
@@ -3385,25 +3593,40 @@
         0 6px 14px -6px rgba(2, 0, 14, 0.16);
       z-index: 6;
       transition:
-        transform .25s cubic-bezier(.2,.75,.2,1),
+        transform .25s cubic-bezier(.2, .75, .2, 1),
         background .2s ease,
         color .2s ease,
         opacity .25s ease;
     }
+
     .reels-nav:hover {
       background: var(--exly-purple);
       color: #fff;
       transform: translateY(-50%) scale(1.08);
     }
-    .reels-nav:active { transform: translateY(-50%) scale(0.95); }
+
+    .reels-nav:active {
+      transform: translateY(-50%) scale(0.95);
+    }
+
     .reels-nav:disabled {
       opacity: 0;
       pointer-events: none;
       transform: translateY(-50%) scale(0.8);
     }
-    .reels-nav.prev { left: clamp(8px, 4vw, 48px); }
-    .reels-nav.next { right: clamp(8px, 4vw, 48px); }
-    .reels-nav svg { width: 22px; height: 22px; }
+
+    .reels-nav.prev {
+      left: clamp(8px, 4vw, 48px);
+    }
+
+    .reels-nav.next {
+      right: clamp(8px, 4vw, 48px);
+    }
+
+    .reels-nav svg {
+      width: 22px;
+      height: 22px;
+    }
 
     /* Dot indicator */
     .reels-dots {
@@ -3413,6 +3636,7 @@
       margin-top: 28px;
       padding: 0 var(--gutter);
     }
+
     .reels-dots button {
       width: 8px;
       height: 8px;
@@ -3423,7 +3647,11 @@
       padding: 0;
       transition: width .35s ease, background .35s ease;
     }
-    .reels-dots button:hover { background: var(--exly-purple-soft); }
+
+    .reels-dots button:hover {
+      background: var(--exly-purple-soft);
+    }
+
     .reels-dots button.is-active {
       width: 28px;
       background: var(--exly-purple);
@@ -3435,32 +3663,79 @@
       margin-top: 44px;
       padding: 0 var(--gutter);
     }
+
     .reels-foot p {
       font-size: clamp(22px, 2.4vw, 32px);
       font-weight: 700;
       color: var(--ink);
       letter-spacing: -0.02em;
     }
+
     .reels-foot p em {
       font-style: normal;
       background: linear-gradient(120deg, var(--exly-purple) 0%, var(--exly-purple-bright) 100%);
       -webkit-background-clip: text;
-              background-clip: text;
+      background-clip: text;
       color: transparent;
     }
 
+    .reels-foot p.reels-foot-sub {
+      margin: 18px auto 0;
+      max-width: 580px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.55;
+      letter-spacing: 0;
+      color: rgba(10, 10, 10, 0.6);
+    }
+
+    @media (max-width: 640px) {
+      .reels-foot p.reels-foot-sub {
+        font-size: 14.5px;
+        margin-top: 14px;
+      }
+    }
+
     @media (max-width: 720px) {
-      .reel-card { flex-basis: 260px; }
-      .reels-stage { padding-inline: calc(50% - 130px); gap: 16px; }
-      .reels-nav { width: 44px; height: 44px; }
-      .reels-nav svg { width: 18px; height: 18px; }
-      .reels-nav.prev { left: 6px; }
-      .reels-nav.next { right: 6px; }
-      .reels-foot { margin-top: 32px; }
-      .reels-stage-wrap { margin-top: 36px; padding: 20px 0; }
+      .reel-card {
+        flex-basis: 260px;
+      }
+
+      .reels-stage {
+        padding-inline: calc(50% - 130px);
+        gap: 16px;
+      }
+
+      .reels-nav {
+        width: 44px;
+        height: 44px;
+      }
+
+      .reels-nav svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      .reels-nav.prev {
+        left: 6px;
+      }
+
+      .reels-nav.next {
+        right: 6px;
+      }
+
+      .reels-foot {
+        margin-top: 32px;
+      }
+
+      .reels-stage-wrap {
+        margin-top: 36px;
+        padding: 20px 0;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       .reel-card,
       .reel-play,
       .reel-mute,
@@ -3468,8 +3743,14 @@
       .reels-dots button {
         transition: none;
       }
-      .reel-play .play-pulse { animation: none; }
-      .reels-stage { scroll-behavior: auto; }
+
+      .reel-play .play-pulse {
+        animation: none;
+      }
+
+      .reels-stage {
+        scroll-behavior: auto;
+      }
     }
 
     /* =========================================================
@@ -3478,6 +3759,7 @@
        per-section rules above.
        ========================================================= */
     @media (max-width: 640px) {
+
       /* Compress vertical rhythm across the whole page */
       .hero,
       .press-strip,
@@ -3490,73 +3772,258 @@
         padding-top: clamp(40px, 9vw, 72px);
         padding-bottom: clamp(40px, 9vw, 72px);
       }
-      .hero { padding-top: 24px; }
+
+      .hero {
+        padding-top: 24px;
+      }
 
       /* Hero typography & art */
-      .hero-grid { gap: 20px; }
-      .hero-art { max-width: 320px; }
-      .hero-copy .display { font-size: clamp(30px, 9vw, 40px); line-height: 1.08; }
-      .hero-copy .lede { font-size: 16px; line-height: 1.5; }
-      .hero-stats { gap: 14px 18px; flex-wrap: wrap; }
-      .hero-stat { min-width: 140px; }
-      .hero-stat strong { font-size: 16px; }
+      .hero-grid {
+        gap: 20px;
+      }
+
+      .hero-art {
+        max-width: 320px;
+      }
+
+      .hero-copy .display {
+        font-size: clamp(30px, 9vw, 40px);
+        line-height: 1.08;
+      }
+
+      .hero-copy .lede {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .hero-stats {
+        gap: 14px 18px;
+        flex-wrap: wrap;
+      }
+
+      .hero-stat {
+        min-width: 140px;
+      }
+
+      .hero-stat strong {
+        font-size: 16px;
+      }
 
       /* CTA: full-width, tap-friendly */
-      .cta-row { gap: 10px; width: 100%; }
-      .cta-row .btn { width: 100%; justify-content: center; }
-      .btn-lg { --pad-y: 16px; --pad-x: 22px; font-size: 15px; }
+      .cta-row {
+        gap: 10px;
+        width: 100%;
+      }
+
+      .cta-row .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .btn-lg {
+        --pad-y: 16px;
+        --pad-x: 22px;
+        font-size: 15px;
+      }
 
       /* Press strip kicker centered & smaller */
-      .press-label { font-size: 11px; letter-spacing: 0.18em; }
+      .press-label {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+      }
 
       /* Why-Exly cards: tighter padding, no forced min-height */
-      .why-cards { gap: 16px; margin-top: 36px; }
-      .why-card { padding: 22px 20px; min-height: 0; }
-      .why-card-title { font-size: 17px; }
-      .why-card-body { font-size: 14px; }
+      .why-cards {
+        gap: 16px;
+        margin-top: 36px;
+      }
+
+      .why-card {
+        padding: 22px 20px;
+        min-height: 0;
+      }
+
+      .why-card-title {
+        font-size: 17px;
+      }
+
+      .why-card-body {
+        font-size: 14px;
+      }
 
       /* How-it-works steps & resp-cards */
-      .steps { gap: 28px 18px; margin-top: 36px; }
-      .step-num { width: 36px; height: 36px; font-size: 14px; }
-      .step-title { font-size: 17px; }
-      .step-body  { font-size: 14px; }
-      .responsibilities { gap: 16px; }
-      .resp-card { padding: 22px 20px; }
+      .steps {
+        gap: 20px;
+        margin-top: 36px;
+        position: relative;
+      }
+
+      .step {
+        position: relative;
+        background: linear-gradient(180deg, rgba(73, 58, 177, 0.05) 0%, rgba(73, 58, 177, 0.01) 100%);
+        border: 1px solid rgba(73, 58, 177, 0.1);
+        border-radius: 20px;
+        padding: 32px 22px 26px;
+        max-width: 100%;
+        box-shadow:
+          -3px 3px 0 rgba(73, 58, 177, 0.06),
+          0 10px 28px -14px rgba(73, 58, 177, 0.22);
+        overflow: hidden;
+      }
+
+      .step::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--exly-purple) 0%, var(--exly-purple-bright) 100%);
+      }
+
+      .step-num {
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+        background: linear-gradient(135deg, var(--exly-purple) 0%, var(--exly-purple-bright) 100%);
+        box-shadow:
+          0 0 0 4px rgba(255, 255, 255, 0.92),
+          0 6px 16px -4px rgba(73, 58, 177, 0.5);
+        margin-bottom: 14px;
+      }
+
+      .step-day {
+        font-size: 11px;
+        letter-spacing: 0.16em;
+        color: var(--exly-purple);
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+
+      .step-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 8px;
+      }
+
+      .step-body {
+        font-size: 14px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+
+      .responsibilities {
+        gap: 16px;
+      }
+
+      .resp-card {
+        padding: 22px 20px;
+      }
 
       /* Tracks: tighter spacing, smaller card padding */
-      .tracks-row { margin-top: 32px; gap: 18px; }
-      .track { padding: 22px 20px; }
+      .tracks-row {
+        margin-top: 32px;
+        gap: 18px;
+      }
+
+      .track {
+        padding: 22px 20px;
+      }
 
       /* Hero trust strip + trust band */
-      .hero-trust-row { gap: 16px; }
-      .hero-trust-title { font-size: 14.5px; }
-      .hero-trust-back { font-size: 12.5px; }
-      .trusted-icons { gap: 12px; row-gap: 16px; }
-      .trusted-label { font-size: 10.5px; max-width: 70px; }
+      .hero-trust-row {
+        gap: 16px;
+      }
+
+      .hero-trust-title {
+        font-size: 14.5px;
+      }
+
+      .hero-trust-back {
+        font-size: 12.5px;
+      }
+
+      .trusted-icons {
+        gap: 12px;
+        row-gap: 16px;
+      }
+
+      .trusted-label {
+        font-size: 10.5px;
+        max-width: 70px;
+      }
+
       .trusted-tip {
         min-width: 130px;
         padding: 8px 10px;
         max-width: calc(100vw - 32px);
       }
-      .tt-name { font-size: 12.5px; }
+
+      .tt-name {
+        font-size: 12.5px;
+      }
+
       .tt-role,
-      .tt-rev { font-size: 11px; }
+      .tt-rev {
+        font-size: 11px;
+      }
 
       /* Testimonial reels: smaller cards, tighter nav, smaller footer */
-      .reels { padding-bottom: 56px; }
-      .reel-card { flex-basis: 220px; }
-      .reels-stage { padding-inline: calc(50% - 110px); gap: 14px; }
-      .reels-nav { width: 40px; height: 40px; }
-      .reels-nav svg { width: 16px; height: 16px; }
-      .reels-foot { margin-top: 28px; }
-      .reels-foot p { font-size: 18px; }
+      .reels {
+        padding-bottom: 56px;
+      }
+
+      .reel-card {
+        flex-basis: 220px;
+      }
+
+      .reels-stage {
+        padding-inline: calc(50% - 110px);
+        gap: 14px;
+      }
+
+      .reels-nav {
+        width: 40px;
+        height: 40px;
+      }
+
+      .reels-nav svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .reels-foot {
+        margin-top: 28px;
+      }
+
+      .reels-foot p {
+        font-size: 18px;
+      }
 
       /* Final CTA: stacked, full-width buttons */
-      .final-cta { padding: 56px 0; }
-      .final-sub { font-size: 16px; margin-top: 14px; }
-      .final-cta .cta-row { max-width: 360px; margin-inline: auto; gap: 10px; }
-      .final-cta .cta-row .btn { width: 100%; }
-      .final-note { font-size: 13px; }
+      .final-cta {
+        padding: 56px 0;
+      }
+
+      .final-sub {
+        font-size: 16px;
+        margin-top: 14px;
+      }
+
+      .final-cta .cta-row {
+        max-width: 360px;
+        margin-inline: auto;
+        gap: 10px;
+      }
+
+      .final-cta .cta-row .btn {
+        width: 100%;
+      }
+
+      .final-note {
+        font-size: 13px;
+      }
 
       /* Footer: stack properly (override the grid layout) */
       .footer-row {
@@ -3566,31 +4033,78 @@
         text-align: center;
         gap: 16px;
       }
+
       .footer-brand,
       .footer-meta,
-      .footer-hashtag { justify-self: center; }
+      .footer-hashtag {
+        justify-self: center;
+      }
+
       .footer-hashtag::before,
-      .footer-hashtag::after { display: none; }
+      .footer-hashtag::after {
+        display: none;
+      }
     }
 
     @media (max-width: 380px) {
-      /* iPhone SE / smallest viewports */
-      .hero-copy .display { font-size: 26px; }
-      .section-heading { font-size: 24px; }
-      .section-sub { font-size: 15px; }
-      .why-card { padding: 20px 18px; }
-      .why-card-title { font-size: 16px; }
-      .step-title { font-size: 16px; }
-      .resp-card { padding: 20px 18px; }
-      .reel-card { flex-basis: 200px; }
-      .reels-stage { padding-inline: calc(50% - 100px); }
-      .reels-foot p { font-size: 16px; }
-      .trusted-trigger,
-      .trusted-more { width: 42px; height: 42px; }
-      .trusted-label { font-size: 10px; max-width: 60px; }
-      .footer-hashtag { font-size: 18px; padding: 6px 12px; }
-    }
 
+      /* iPhone SE / smallest viewports */
+      .hero-copy .display {
+        font-size: 26px;
+      }
+
+      .section-heading {
+        font-size: 24px;
+      }
+
+      .section-sub {
+        font-size: 15px;
+      }
+
+      .why-card {
+        padding: 20px 18px;
+      }
+
+      .why-card-title {
+        font-size: 16px;
+      }
+
+      .step-title {
+        font-size: 16px;
+      }
+
+      .resp-card {
+        padding: 20px 18px;
+      }
+
+      .reel-card {
+        flex-basis: 200px;
+      }
+
+      .reels-stage {
+        padding-inline: calc(50% - 100px);
+      }
+
+      .reels-foot p {
+        font-size: 16px;
+      }
+
+      .trusted-trigger,
+      .trusted-more {
+        width: 42px;
+        height: 42px;
+      }
+
+      .trusted-label {
+        font-size: 10px;
+        max-width: 60px;
+      }
+
+      .footer-hashtag {
+        font-size: 18px;
+        padding: 6px 12px;
+      }
+    }
   </style>
   <script defer>
 
@@ -3665,11 +4179,12 @@
           { key: "zoom", disc: "#0B5CFF", glyph: "#FFFFFF", size: 1, gs: 0.58, path: "M5.033 14.649H.743a.74.74 0 0 1-.686-.458.74.74 0 0 1 .16-.808L3.19 10.41H1.06A1.06 1.06 0 0 1 0 9.35h3.957c.301 0 .57.18.686.458a.74.74 0 0 1-.161.808L1.51 13.59h2.464c.585 0 1.06.475 1.06 1.06zM24 11.338c0-1.14-.927-2.066-2.066-2.066-.61 0-1.158.265-1.537.686a2.061 2.061 0 0 0-1.536-.686c-1.14 0-2.066.926-2.066 2.066v3.311a1.06 1.06 0 0 0 1.06-1.06v-2.251a1.004 1.004 0 0 1 2.013 0v2.251c0 .586.474 1.06 1.06 1.06v-3.311a1.004 1.004 0 0 1 2.012 0v2.251c0 .586.475 1.06 1.06 1.06zM16.265 12a2.728 2.728 0 1 1-5.457 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0zm-4.82 0a2.728 2.728 0 1 1-5.458 0 2.728 2.728 0 0 1 5.457 0zm-1.06 0a1.669 1.669 0 1 0-3.338 0 1.669 1.669 0 0 0 3.338 0z" },
           { key: "wix", disc: "#0C0C0C", glyph: "#FFFFFF", size: 0.9, gs: 0.56, path: "m0 7.354 2.113 9.292h.801a1.54 1.54 0 0 0 1.506-1.218l1.351-6.34a.171.171 0 0 1 .167-.137c.08 0 .15.058.167.137l1.352 6.34a1.54 1.54 0 0 0 1.506 1.218h.805l2.113-9.292h-.565c-.62 0-1.159.43-1.296 1.035l-1.26 5.545-1.106-5.176a1.76 1.76 0 0 0-2.19-1.324c-.639.176-1.113.716-1.251 1.365l-1.094 5.127-1.26-5.537A1.33 1.33 0 0 0 .563 7.354H0zm13.992 0a.951.951 0 0 0-.951.95v8.342h.635a.952.952 0 0 0 .951-.95V7.353h-.635zm1.778 0 3.158 4.66-3.14 4.632h1.325c.368 0 .712-.181.918-.486l1.756-2.59a.12.12 0 0 1 .197 0l1.754 2.59c.206.305.55.486.918.486h1.326l-3.14-4.632L24 7.354h-1.326c-.368 0-.712.181-.918.486l-1.772 2.617a.12.12 0 0 1-.197 0L18.014 7.84a1.108 1.108 0 0 0-.918-.486H15.77z" },
           { key: "zapier", disc: "#FFFFFF", glyph: "#FF4F00", size: 1.06, gs: 0.58, path: "M4.157 0A4.151 4.151 0 0 0 0 4.161v15.678A4.151 4.151 0 0 0 4.157 24h15.682A4.152 4.152 0 0 0 24 19.839V4.161A4.152 4.152 0 0 0 19.839 0H4.157Zm10.61 8.761h.03a.577.577 0 0 1 .23.038.585.585 0 0 1 .201.124.63.63 0 0 1 .162.431.612.612 0 0 1-.162.435.58.58 0 0 1-.201.128.58.58 0 0 1-.23.042.529.529 0 0 1-.235-.042.585.585 0 0 1-.332-.328.559.559 0 0 1-.038-.235.613.613 0 0 1 .17-.431.59.59 0 0 1 .405-.162Zm2.853 1.572c.03.004.061.004.095.004.325-.011.646.064.937.219.238.144.431.355.552.609.128.279.189.582.185.888v.193a2 2 0 0 1 0 .219h-2.498c.003.227.075.45.204.642a.78.78 0 0 0 .646.265.714.714 0 0 0 .484-.136.642.642 0 0 0 .23-.318l.915.257a1.398 1.398 0 0 1-.28.537c-.14.159-.321.284-.521.355a2.234 2.234 0 0 1-.836.136 1.923 1.923 0 0 1-1.001-.245 1.618 1.618 0 0 1-.665-.703 2.221 2.221 0 0 1-.227-1.036 1.95 1.95 0 0 1 .48-1.398 1.9 1.9 0 0 1 1.3-.488Zm-9.607.023c.162.004.325.026.48.079.207.065.4.174.563.314.26.302.393.692.366 1.088v2.276H8.53l-.109-.711h-.065c-.064.163-.155.31-.272.439a1.122 1.122 0 0 1-.374.264 1.023 1.023 0 0 1-.453.083 1.334 1.334 0 0 1-.866-.264.965.965 0 0 1-.329-.801.993.993 0 0 1 .076-.431 1.02 1.02 0 0 1 .242-.363 1.478 1.478 0 0 1 1.043-.303h.952v-.181a.696.696 0 0 0-.136-.454.553.553 0 0 0-.438-.154.695.695 0 0 0-.378.086.48.48 0 0 0-.193.254l-.99-.144a1.26 1.26 0 0 1 .257-.563c.14-.174.321-.302.533-.378.261-.091.54-.136.82-.129.053-.003.106-.007.163-.007Zm4.384.007c.174 0 .347.038.506.114.182.083.34.211.458.374.257.423.377.911.351 1.406a2.53 2.53 0 0 1-.355 1.448 1.148 1.148 0 0 1-1.009.517c-.204 0-.401-.045-.582-.136a1.052 1.052 0 0 1-.48-.457 1.298 1.298 0 0 1-.114-.234h-.045l.004 1.784h-1.059v-4.713h.904l.117.805h.057c.068-.208.177-.401.328-.56a1.129 1.129 0 0 1 .843-.344h.076v-.004Zm7.559.084h.903l.113.805h.053a1.37 1.37 0 0 1 .235-.484.813.813 0 0 1 .313-.242.82.82 0 0 1 .39-.076h.234v1.051h-.401a.662.662 0 0 0-.313.008.623.623 0 0 0-.272.155.663.663 0 0 0-.174.26.683.683 0 0 0-.027.314v1.875h-1.054v-3.666Zm-17.515.003h3.262v.896L3.73 13.104l.034.113h1.973l.042.9H2.4v-.9l1.931-1.754-.045-.117H2.441v-.896Zm11.815 0h1.055v3.659h-1.055V10.45Zm3.443.684.019.016a.69.69 0 0 0-.351.045.756.756 0 0 0-.287.204c-.11.155-.174.336-.189.522h1.545c-.034-.526-.257-.787-.74-.787h.003Zm-5.718.163c-.026 0-.057 0-.083.004a.78.78 0 0 0-.31.053.746.746 0 0 0-.257.189 1.016 1.016 0 0 0-.204.695v.064c-.015.257.057.507.204.711a.634.634 0 0 0 .253.196.638.638 0 0 0 .314.061.644.644 0 0 0 .578-.265c.14-.223.204-.48.189-.74a1.216 1.216 0 0 0-.181-.711.677.677 0 0 0-.503-.257Zm-4.509 1.266a.464.464 0 0 0-.268.102.373.373 0 0 0-.114.276c0 .053.008.106.027.155a.375.375 0 0 0 .087.132.576.576 0 0 0 .397.11v.004a.863.863 0 0 0 .563-.182.573.573 0 0 0 .211-.457v-.14h-.903Z" },
-          { key: "zoho", disc: "#FFFFFF", glyph: "#E42527", size: 0.9, gs: 0.56, path: "M8.66 6.897a1.299 1.299 0 0 0-1.205.765l-.642 1.44-.062-.385A1.291 1.291 0 0 0 5.27 7.648l-4.185.678A1.291 1.291 0 0 0 .016 9.807l.678 4.18a1.293 1.293 0 0 0 1.27 1.087c.074 0 .143-.01.216-.017l4.18-.678c.436-.07.784-.351.96-.723l2.933 1.307a1.304 1.304 0 0 0 .988.026c.321-.12.575-.365.716-.678l.28-.629.038.276a1.297 1.297 0 0 0 1.455 1.103l3.712-.501a1.29 1.29 0 0 0 1.03.514h4.236c.713 0 1.29-.58 1.291-1.291V9.545c0-.712-.58-1.291-1.291-1.291h-4.236c-.079 0-.155.008-.23.022a1.309 1.309 0 0 0-.275-.288c-.275-.21-.614-.3-.958-.253l-4.197.571c-.155.021-.3.07-.432.14L9.159 7.01a1.27 1.27 0 0 0-.499-.113zm-.025.705c.077 0 .159.013.24.052l2.971 1.324c-.128.238-.18.508-.142.782l.357 2.596h.002l-.745 1.672a.59.59 0 0 1-.777.296l-3.107-1.385-.004-.041-.41-2.526L8.1 7.95a.589.589 0 0 1 .536-.348zm-3.159.733c.125 0 .245.039.343.112.13.09.21.227.237.382l.234 1.446-.56 1.259a1.27 1.27 0 0 0-.026.987c.12.322.364.575.678.717l.295.131a.585.585 0 0 1-.428.314l-4.185.678a.59.59 0 0 1-.674-.485l-.678-4.18a.588.588 0 0 1 .485-.674l4.185-.678c.03-.004.064-.01.094-.01zm11.705.09a.59.59 0 0 1 .415.173 1.287 1.287 0 0 0-.416.947v4.237c0 .033.003.065.005.097l-3.55.482a.586.586 0 0 1-.66-.502l-.191-1.403.899-2.017a1.29 1.29 0 0 0-.333-1.5l3.754-.51c.026-.004.051-.004.077-.004zm1.3.532h4.227c.326 0 .588.266.588.588v4.237a.589.589 0 0 1-.588.588h-4.237a.564.564 0 0 1-.12-.013c.47-.246.758-.765.684-1.318zm-5.988.309.254.113c.296.133.43.48.296.777l-.432.97-.207-1.465a.58.58 0 0 1 .09-.395zm5.39.538.453 3.325a.583.583 0 0 1-.453.65zM6.496 11.545l.17 1.052a.588.588 0 0 1-.293-.776zm3.985 4.344a.588.588 0 0 0-.612.603c0 .358.244.61.601.61a.582.582 0 0 0 .607-.608c0-.35-.242-.605-.596-.605zm5.545 0a.588.588 0 0 0-.612.603c0 .358.245.61.602.61a.582.582 0 0 0 .606-.608c0-.35-.24-.605-.596-.605zm-8.537.018a.047.047 0 0 0-.048.047v.085c0 .026.021.047.048.047h.52l-.623.9a.052.052 0 0 0-.009.027v.027c0 .026.021.047.048.047h.815a.047.047 0 0 0 .047-.047v-.085a.047.047 0 0 0-.047-.047h-.55l.606-.9a.05.05 0 0 0 .008-.026v-.028a.047.047 0 0 0-.047-.047zm5.303 0a.047.047 0 0 0-.047.047v1.086c0 .026.02.047.047.047h.135a.047.047 0 0 0 .047-.047v-.454h.545v.454c0 .026.02.047.047.047h.134a.047.047 0 0 0 .047-.047v-1.086a.047.047 0 0 0-.047-.047h-.134a.047.047 0 0 0-.047.047v.453h-.545v-.453a.047.047 0 0 0-.047-.047zm-2.324.164c.25 0 .372.194.372.425 0 .219-.109.425-.358.426-.242 0-.375-.197-.375-.419 0-.235.108-.432.36-.432zm5.545 0c.25 0 .372.194.372.425 0 .219-.108.425-.358.426-.242 0-.374-.197-.374-.419 0-.235.108-.432.36-.432z" },
+          { key: "zoho", disc: "#FFFFFF", glyph: "#E42527", size: 0.95, gs: 0.78, custom: true, inner: '<svg viewBox="0 0 64 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><text x="32" y="18" font-family="Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif" font-weight="900" font-size="18" text-anchor="middle" fill="#E42527" letter-spacing="-0.5">Zoho</text></svg>' },
           { key: "wordpress", disc: "#FFFFFF", glyph: "#21759B", size: 0.98, gs: 0.6, path: "M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0" },
           { key: "googlecalendar", disc: "#FFFFFF", glyph: "#4285F4", size: 0.86, gs: 0.58, path: "M18.316 5.684H24v12.632h-5.684V5.684zM5.684 24h12.632v-5.684H5.684V24zM18.316 5.684V0H1.895A1.894 1.894 0 0 0 0 1.895v16.421h5.684V5.684h12.632zm-7.207 6.25v-.065c.272-.144.5-.349.687-.617s.279-.595.279-.982c0-.379-.099-.72-.3-1.025a2.05 2.05 0 0 0-.832-.714 2.703 2.703 0 0 0-1.197-.257c-.6 0-1.094.156-1.481.467-.386.311-.65.671-.793 1.078l1.085.452c.086-.249.224-.461.413-.633.189-.172.445-.257.767-.257.33 0 .602.088.816.264a.86.86 0 0 1 .322.703c0 .33-.12.589-.36.778-.24.19-.535.284-.886.284h-.567v1.085h.633c.407 0 .748.109 1.02.327.272.218.407.499.407.843 0 .336-.129.614-.387.832s-.565.327-.924.327c-.351 0-.651-.103-.897-.311-.248-.208-.422-.502-.521-.881l-1.096.452c.178.616.505 1.082.977 1.401.472.319.984.478 1.538.477a2.84 2.84 0 0 0 1.293-.291c.382-.193.684-.458.902-.794.218-.336.327-.72.327-1.149 0-.429-.115-.797-.344-1.105a2.067 2.067 0 0 0-.881-.689zm2.093-1.931l.602.913L15 10.045v5.744h1.187V8.446h-.827l-2.158 1.557zM22.105 0h-3.289v5.184H24V1.895A1.894 1.894 0 0 0 22.105 0zm-3.289 23.5l4.684-4.684h-4.684V23.5zM0 22.105C0 23.152.848 24 1.895 24h3.289v-5.184H0v3.289z" },
           { key: "calendly", disc: "#FFFFFF", glyph: "#006BFF", size: 0.84, gs: 0.58, path: "M19.655 14.262c.281 0 .557.023.828.064 0 .005-.005.01-.005.014-.105.267-.234.534-.381.786l-1.219 2.106c-1.112 1.936-3.177 3.127-5.411 3.127h-2.432c-2.23 0-4.294-1.191-5.412-3.127l-1.218-2.106a6.251 6.251 0 0 1 0-6.252l1.218-2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c.147.252.271.519.381.786 0 .004.005.009.005.014-.267.041-.543.064-.828.064-1.816 0-2.501-.607-3.291-1.306-.764-.676-1.711-1.517-3.44-1.517h-1.029c-1.251 0-2.387.455-3.2 1.278-.796.805-1.233 1.904-1.233 3.099v1.411c0 1.196.437 2.295 1.233 3.099.813.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676-.841 3.439-1.517.791-.703 1.471-1.306 3.287-1.301Zm.005-3.237c.399 0 .794-.036 1.179-.11-.002-.004-.002-.01-.002-.014-.073-.414-.193-.823-.349-1.218.731-.12 1.407-.396 1.986-.819 0-.004-.005-.013-.005-.018-.331-1.085-.832-2.101-1.489-3.03-.649-.915-1.435-1.719-2.331-2.395-1.867-1.398-4.088-2.138-6.428-2.138-1.448 0-2.855.28-4.175.841-1.273.543-2.423 1.315-3.407 2.299S2.878 6.552 2.341 7.83c-.557 1.324-.842 2.726-.842 4.175 0 1.448.281 2.855.842 4.174.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324.556 2.727.841 4.175.841 2.34 0 4.561-.74 6.428-2.137a10.815 10.815 0 0 0 2.331-2.396c.652-.929 1.158-1.949 1.489-3.03 0-.004.005-.014.005-.018-.579-.423-1.255-.699-1.986-.819.161-.395.276-.804.349-1.218.005-.009.005-.014.005-.023.869.166 1.692.506 2.404 1.035.685.505.552 1.075.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0-12-5.375-12-12s5.37-12 12-12c5.398 0 9.963 3.563 11.471 8.464.106.341.239.915-.446 1.421-.717.529-1.535.873-2.404 1.034.128.716.128 1.45 0 2.166-.387-.074-.782-.11-1.182-.11-4.184 0-3.968 2.823-6.736 2.823h-1.029c-1.899 0-3.15-1.357-3.15-3.095v-1.411c0-1.738 1.251-3.094 3.15-3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z" },
-          { key: "webhooks", disc: "#FFFFFF", glyph: "#4741B4", size: 0.9, gs: 0.56, custom: true, inner: '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#4741B4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9.2a3.5 3.5 0 1 1 5 3.2l2.3 4"/><path d="M15.5 14.8a3.5 3.5 0 1 1-4.6 2.7H6.2"/><path d="M9.4 17.5a3.5 3.5 0 1 1-3-5.3l2.3-4"/></svg>' }
+          { key: "webhooks", disc: "#FFFFFF", glyph: "#4741B4", size: 0.9, gs: 0.56, custom: true, inner: '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="none" stroke="#4741B4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 9.2a3.5 3.5 0 1 1 5 3.2l2.3 4"/><path d="M15.5 14.8a3.5 3.5 0 1 1-4.6 2.7H6.2"/><path d="M9.4 17.5a3.5 3.5 0 1 1-3-5.3l2.3-4"/></svg>' },
+          { key: "manychat", disc: "#0B0B0B", size: 1, gs: 0.86, image: "assets/partners/manychat.png", alt: "ManyChat" }
         ];
 
         var N = BRANDS.length;
@@ -3679,9 +4194,11 @@
           el.style.background = b.disc;
           el.style.setProperty("--gs", (b.gs * 100) + "%");
           if (b.disc.toUpperCase() !== "#FFFFFF") el.style.borderColor = "rgba(0,0,0,.06)";
-          el.innerHTML = b.custom
-            ? b.inner
-            : '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><path fill="' + b.glyph + '" d="' + b.path + '"/></svg>';
+          el.innerHTML = b.image
+            ? '<img src="' + b.image + '" alt="' + (b.alt || b.key) + '" loading="lazy" decoding="async" />'
+            : (b.custom
+              ? b.inner
+              : '<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"><path fill="' + b.glyph + '" d="' + b.path + '"/></svg>');
           stage.appendChild(el);
           return { el: el, base: (i / N) * Math.PI * 2 - Math.PI / 2, size: b.size, phase: i * 0.83, pop: 0.25 + i * 0.17 };
         });
@@ -3837,7 +4354,7 @@
           track.style.transform = "translate3d(" + startOffset + "px, 0, 0)";
           track.style.animation = "none";
           marquee.classList.add("is-dragging");
-          try { marquee.setPointerCapture(pointerId); } catch (err) {}
+          try { marquee.setPointerCapture(pointerId); } catch (err) { }
         });
 
         marquee.addEventListener("pointermove", function (e) {
@@ -3860,7 +4377,7 @@
           dragging = false;
           marquee.classList.remove("is-dragging");
           if (pointerId !== null) {
-            try { marquee.releasePointerCapture(pointerId); } catch (err) {}
+            try { marquee.releasePointerCapture(pointerId); } catch (err) { }
             pointerId = null;
           }
           // Resume the CSS animation from the dragged-to position by computing a
@@ -3985,410 +4502,411 @@
     })();
 
 
-      // Testimonial reels — INFINITE coverflow carousel.
-      // Strategy: clone all N originals twice (before-copy + originals + after-copy) → 3N cards.
-      // We track DOM index in [0, 3N). User-visible "real" index is (domIdx % N).
-      // When scroll drifts into the outer thirds, instantly jump scrollLeft by the pixel
-      // distance to the equivalent middle-third card — visually seamless.
-      function initReels() {
-        var stage = document.querySelector("[data-reels-stage]");
-        if (!stage) return;
-        var originals = Array.prototype.slice.call(stage.querySelectorAll("[data-reel-card]"));
-        if (!originals.length) return;
+    // Testimonial reels — INFINITE coverflow carousel.
+    // Strategy: clone all N originals twice (before-copy + originals + after-copy) → 3N cards.
+    // We track DOM index in [0, 3N). User-visible "real" index is (domIdx % N).
+    // When scroll drifts into the outer thirds, instantly jump scrollLeft by the pixel
+    // distance to the equivalent middle-third card — visually seamless.
+    function initReels() {
+      var stage = document.querySelector("[data-reels-stage]");
+      if (!stage) return;
+      var originals = Array.prototype.slice.call(stage.querySelectorAll("[data-reel-card]"));
+      if (!originals.length) return;
 
-        var ORIG_N = originals.length;
-        originals.forEach(function (c, i) { c.setAttribute("data-orig-index", i); });
+      var ORIG_N = originals.length;
+      originals.forEach(function (c, i) { c.setAttribute("data-orig-index", i); });
 
-        // INFINITE: clone every original twice (before set + originals + after set) → 3N total.
-        // checkWrap() silently jumps scrollLeft back to the equivalent middle-third card
-        // when the user drifts into the outer thirds, producing seamless wrap in either direction.
-        var cards;
-        if (ORIG_N > 1) {
-          var beforeFrag = document.createDocumentFragment();
-          var afterFrag  = document.createDocumentFragment();
-          var beforeClones = [];
-          var afterClones  = [];
-          originals.forEach(function (c, i) {
-            var b = c.cloneNode(true);
-            var a = c.cloneNode(true);
-            b.setAttribute("data-clone", "before");
-            a.setAttribute("data-clone", "after");
-            b.setAttribute("data-orig-index", i);
-            a.setAttribute("data-orig-index", i);
-            beforeClones.push(b);
-            afterClones.push(a);
-            beforeFrag.appendChild(b);
-            afterFrag.appendChild(a);
-          });
-          stage.insertBefore(beforeFrag, originals[0]);
-          stage.appendChild(afterFrag);
-          cards = beforeClones.concat(originals).concat(afterClones);
-        } else {
-          cards = originals;
-        }
+      // INFINITE: clone every original twice (before set + originals + after set) → 3N total.
+      // checkWrap() silently jumps scrollLeft back to the equivalent middle-third card
+      // when the user drifts into the outer thirds, producing seamless wrap in either direction.
+      var cards;
+      if (ORIG_N > 1) {
+        var beforeFrag = document.createDocumentFragment();
+        var afterFrag = document.createDocumentFragment();
+        var beforeClones = [];
+        var afterClones = [];
+        originals.forEach(function (c, i) {
+          var b = c.cloneNode(true);
+          var a = c.cloneNode(true);
+          b.setAttribute("data-clone", "before");
+          a.setAttribute("data-clone", "after");
+          b.setAttribute("data-orig-index", i);
+          a.setAttribute("data-orig-index", i);
+          beforeClones.push(b);
+          afterClones.push(a);
+          beforeFrag.appendChild(b);
+          afterFrag.appendChild(a);
+        });
+        stage.insertBefore(beforeFrag, originals[0]);
+        stage.appendChild(afterFrag);
+        cards = beforeClones.concat(originals).concat(afterClones);
+      } else {
+        cards = originals;
+      }
 
-        var prevBtn = document.querySelector("[data-reels-prev]");
-        var nextBtn = document.querySelector("[data-reels-next]");
-        var dotsWrap = document.querySelector("[data-reels-dots]");
-        var focusedIndex = 0;
-        var sectionInView = true;
-        var userUnmuted = false;
-        var section = document.getElementById("reels");
+      var prevBtn = document.querySelector("[data-reels-prev]");
+      var nextBtn = document.querySelector("[data-reels-next]");
+      var dotsWrap = document.querySelector("[data-reels-dots]");
+      var focusedIndex = 0;
+      var sectionInView = true;
+      var userUnmuted = false;
+      var section = document.getElementById("reels");
 
-        function pauseOthers(except) {
-          cards.forEach(function (c) {
-            if (c === except) return;
-            var v = c.querySelector("video");
-            if (v && !v.paused) v.pause();
-            c.classList.remove("is-playing");
-          });
-        }
+      function pauseOthers(except) {
+        cards.forEach(function (c) {
+          if (c === except) return;
+          var v = c.querySelector("video");
+          if (v && !v.paused) v.pause();
+          c.classList.remove("is-playing");
+        });
+      }
 
-        function setFocused(idx) {
-          if (idx < 0 || idx >= cards.length) return;
-          var alreadyFocused = idx === focusedIndex && cards[idx] && cards[idx].classList.contains("is-focused");
-          if (alreadyFocused) {
-            updateDots();
-            if (typeof updateNav === "function") updateNav();
-            if (sectionInView) playFocused();
-            return;
-          }
-          focusedIndex = idx;
-          cards.forEach(function (c, i) {
-            var active = i === idx;
-            c.classList.toggle("is-focused", active);
-            if (!active) {
-              var v = c.querySelector("video");
-              if (v && !v.paused) v.pause();
-              c.classList.remove("is-playing");
-            }
-          });
+      function setFocused(idx) {
+        if (idx < 0 || idx >= cards.length) return;
+        var alreadyFocused = idx === focusedIndex && cards[idx] && cards[idx].classList.contains("is-focused");
+        if (alreadyFocused) {
           updateDots();
           if (typeof updateNav === "function") updateNav();
           if (sectionInView) playFocused();
+          return;
         }
-
-        function scrollToCard(idx) {
-          var card = cards[idx];
-          if (!card) return;
-          var stageRect = stage.getBoundingClientRect();
-          var cardRect = card.getBoundingClientRect();
-          var delta = (cardRect.left + cardRect.width / 2) - (stageRect.left + stageRect.width / 2);
-          stage.scrollBy({ left: delta, behavior: "smooth" });
-        }
-
-        // Instant (no-animation) jump so the card at domIdx sits centered.
-        function snapCenter(idx) {
-          var card = cards[idx];
-          if (!card) return;
-          var sRect = stage.getBoundingClientRect();
-          var cRect = card.getBoundingClientRect();
-          var delta = (cRect.left + cRect.width / 2) - (sRect.left + sRect.width / 2);
-          var prev = stage.style.scrollBehavior;
-          stage.style.scrollBehavior = "auto";
-          stage.scrollLeft += delta;
-          stage.style.scrollBehavior = prev;
-        }
-
-        function findCenteredIndex() {
-          var stageRect = stage.getBoundingClientRect();
-          var cx = stageRect.left + stageRect.width / 2;
-          var best = 0;
-          var bestDist = Infinity;
-          for (var i = 0; i < cards.length; i++) {
-            var r = cards[i].getBoundingClientRect();
-            var d = Math.abs((r.left + r.width / 2) - cx);
-            if (d < bestDist) { bestDist = d; best = i; }
-          }
-          return best;
-        }
-
-        function updateDots() {
-          if (!dotsWrap) return;
-          var realIdx = ((focusedIndex % ORIG_N) + ORIG_N) % ORIG_N;
-          var btns = dotsWrap.children;
-          for (var i = 0; i < btns.length; i++) {
-            btns[i].classList.toggle("is-active", i === realIdx);
-          }
-        }
-
-        // Closest clone of a given original index to the current focusedIndex
-        function nearestCopyOf(origIdx) {
-          var candidates = [origIdx, origIdx + ORIG_N, origIdx + 2 * ORIG_N];
-          var best = candidates[0];
-          var bestDist = Math.abs(best - focusedIndex);
-          for (var i = 1; i < candidates.length; i++) {
-            var d = Math.abs(candidates[i] - focusedIndex);
-            if (d < bestDist) { bestDist = d; best = candidates[i]; }
-          }
-          return best;
-        }
-
-        // After scroll settles, if we drifted into the outer thirds, jump back to the
-        // equivalent card in the middle third — invisibly (scroll-behavior: auto).
-        function checkWrap() {
-          if (cards.length < 3 * ORIG_N) return;
-          var centered = findCenteredIndex();
-          var target = null;
-          if (centered < ORIG_N) target = centered + ORIG_N;
-          else if (centered >= 2 * ORIG_N) target = centered - ORIG_N;
-          if (target === null) return;
-          var from = cards[centered].getBoundingClientRect();
-          var to = cards[target].getBoundingClientRect();
-          var delta = to.left - from.left;
-          var prev = stage.style.scrollBehavior;
-          stage.style.scrollBehavior = "auto";
-          stage.scrollLeft += delta;
-          stage.style.scrollBehavior = prev;
-          focusedIndex = target;
-          updateDots();
-        }
-
-        function playFocused() {
-          var card = cards[focusedIndex];
-          if (!card) return;
-          var video = card.querySelector("video");
-          if (!video) return;
-          pauseOthers(card);
-          if (userUnmuted) {
-            video.muted = false;
-            card.classList.add("is-unmuted");
-          }
-          var p = video.play();
-          if (p && typeof p.then === "function") {
-            p.then(function () { card.classList.add("is-playing"); })
-             .catch(function () {
-               // Autoplay-with-sound blocked → fall back to muted
-               video.muted = true;
-               card.classList.remove("is-unmuted");
-               video.play().then(function () { card.classList.add("is-playing"); })
-                           .catch(function () { /* swallow */ });
-             });
-          }
-        }
-
-        function togglePlayFocused() {
-          var card = cards[focusedIndex];
-          if (!card) return;
-          var video = card.querySelector("video");
-          if (!video) return;
-          if (video.paused) playFocused();
-          else { video.pause(); card.classList.remove("is-playing"); }
-        }
-
-        // Build dots — one per card, scroll to that card
-        if (dotsWrap) {
-          dotsWrap.innerHTML = "";
-          for (var i = 0; i < ORIG_N; i++) {
-            (function (origIdx) {
-              var b = document.createElement("button");
-              b.type = "button";
-              b.setAttribute("aria-label", "Go to reel " + (origIdx + 1));
-              b.addEventListener("click", function () { scrollToCard(nearestCopyOf(origIdx)); });
-              dotsWrap.appendChild(b);
-            })(i);
-          }
-        }
-
-        // Card interactions
-        cards.forEach(function (card, i) {
-          var video = card.querySelector("video");
-          var muteBtn = card.querySelector("[data-reel-mute]");
-
-          card.setAttribute("tabindex", "0");
-          card.setAttribute("role", "button");
-          card.setAttribute("aria-label", "Testimonial reel. Press Enter to play.");
-
-          card.addEventListener("click", function (e) {
-            if (muteBtn && (e.target === muteBtn || muteBtn.contains(e.target))) return;
-            if (i !== focusedIndex) scrollToCard(i);
-            else togglePlayFocused();
-          });
-
-          if (muteBtn) {
-            muteBtn.addEventListener("click", function (e) {
-              e.stopPropagation();
-              if (!video) return;
-              video.muted = !video.muted;
-              userUnmuted = !video.muted;
-              card.classList.toggle("is-unmuted", !video.muted);
-            });
-          }
-
-          if (video) {
-            video.addEventListener("pause", function () { card.classList.remove("is-playing"); });
-            video.addEventListener("play", function () { card.classList.add("is-playing"); });
-            video.addEventListener("ended", function () { card.classList.remove("is-playing"); });
+        focusedIndex = idx;
+        cards.forEach(function (c, i) {
+          var active = i === idx;
+          c.classList.toggle("is-focused", active);
+          if (!active) {
+            var v = c.querySelector("video");
+            if (v && !v.paused) v.pause();
+            c.classList.remove("is-playing");
           }
         });
+        updateDots();
+        if (typeof updateNav === "function") updateNav();
+        if (sectionInView) playFocused();
+      }
 
-        // Scroll handler: rAF-throttled focus + debounced wrap check on idle
-        var rafId = 0;
-        var idleTimer = 0;
-        stage.addEventListener("scroll", function () {
-          if (!rafId) {
-            rafId = requestAnimationFrame(function () {
-              rafId = 0;
-              setFocused(findCenteredIndex());
-            });
-          }
-          if (idleTimer) clearTimeout(idleTimer);
-          idleTimer = setTimeout(function () {
-            idleTimer = 0;
-            checkWrap();
-          }, 160);
-        }, { passive: true });
+      function scrollToCard(idx) {
+        var card = cards[idx];
+        if (!card) return;
+        var stageRect = stage.getBoundingClientRect();
+        var cardRect = card.getBoundingClientRect();
+        var delta = (cardRect.left + cardRect.width / 2) - (stageRect.left + stageRect.width / 2);
+        stage.scrollBy({ left: delta, behavior: "smooth" });
+      }
 
-        function updateNav() {
-          // Infinite carousel — arrows are always actionable.
-          if (prevBtn) prevBtn.disabled = false;
-          if (nextBtn) nextBtn.disabled = false;
-        }
-        if (prevBtn) {
-          prevBtn.addEventListener("click", function () {
-            scrollToCard(Math.max(0, focusedIndex - 1));
-          });
-        }
-        if (nextBtn) {
-          nextBtn.addEventListener("click", function () {
-            scrollToCard(Math.min(cards.length - 1, focusedIndex + 1));
-          });
-        }
+      // Instant (no-animation) jump so the card at domIdx sits centered.
+      function snapCenter(idx) {
+        var card = cards[idx];
+        if (!card) return;
+        var sRect = stage.getBoundingClientRect();
+        var cRect = card.getBoundingClientRect();
+        var delta = (cRect.left + cRect.width / 2) - (sRect.left + sRect.width / 2);
+        var prev = stage.style.scrollBehavior;
+        stage.style.scrollBehavior = "auto";
+        stage.scrollLeft += delta;
+        stage.style.scrollBehavior = prev;
+      }
 
-        // Keyboard navigation
-        if (section) {
-          section.addEventListener("keydown", function (e) {
-            if (e.key === "ArrowLeft") { e.preventDefault(); scrollToCard(Math.max(0, focusedIndex - 1)); }
-            else if (e.key === "ArrowRight") { e.preventDefault(); scrollToCard(Math.min(cards.length - 1, focusedIndex + 1)); }
-            else if (e.key === "Enter" || e.key === " ") {
-              if (document.activeElement && document.activeElement.classList && document.activeElement.classList.contains("reel-card")) {
-                e.preventDefault();
-                togglePlayFocused();
-              }
-            }
-          });
+      function findCenteredIndex() {
+        var stageRect = stage.getBoundingClientRect();
+        var cx = stageRect.left + stageRect.width / 2;
+        var best = 0;
+        var bestDist = Infinity;
+        for (var i = 0; i < cards.length; i++) {
+          var r = cards[i].getBoundingClientRect();
+          var d = Math.abs((r.left + r.width / 2) - cx);
+          if (d < bestDist) { bestDist = d; best = i; }
         }
+        return best;
+      }
 
-        // Initial focus — center of the middle third (the originals), which is the main testimonial.
-        var startIdx = cards.length === 3 * ORIG_N
-          ? ORIG_N + Math.floor(ORIG_N / 2)
-          : (cards.length > 1 ? Math.floor(cards.length / 2) : 0);
-        function init() {
-          requestAnimationFrame(function () {
-            requestAnimationFrame(function () {
-              snapCenter(startIdx);
-              setFocused(startIdx);
-              playFocused();
-              setTimeout(function () {
-                setFocused(findCenteredIndex());
-                playFocused();
-              }, 120);
-            });
-          });
+      function updateDots() {
+        if (!dotsWrap) return;
+        var realIdx = ((focusedIndex % ORIG_N) + ORIG_N) % ORIG_N;
+        var btns = dotsWrap.children;
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.toggle("is-active", i === realIdx);
         }
-        init();
+      }
 
-        // Unmute the focused video on the first user gesture anywhere on the page.
-        // Browsers block unmuted autoplay before user interaction; this flips it
-        // the moment we're allowed to.
-        function unmuteOnFirstGesture() {
-          userUnmuted = true;
-          var c = cards[focusedIndex];
-          if (c) {
-            var v = c.querySelector("video");
-            if (v) {
-              v.muted = false;
-              c.classList.add("is-unmuted");
-              var p = v.play();
-              if (p && typeof p.catch === "function") p.catch(function () {});
-            }
-          }
-          window.removeEventListener("pointerdown", unmuteOnFirstGesture, true);
-          window.removeEventListener("keydown", unmuteOnFirstGesture, true);
-          window.removeEventListener("touchstart", unmuteOnFirstGesture, true);
+      // Closest clone of a given original index to the current focusedIndex
+      function nearestCopyOf(origIdx) {
+        var candidates = [origIdx, origIdx + ORIG_N, origIdx + 2 * ORIG_N];
+        var best = candidates[0];
+        var bestDist = Math.abs(best - focusedIndex);
+        for (var i = 1; i < candidates.length; i++) {
+          var d = Math.abs(candidates[i] - focusedIndex);
+          if (d < bestDist) { bestDist = d; best = candidates[i]; }
         }
-        window.addEventListener("pointerdown", unmuteOnFirstGesture, true);
-        window.addEventListener("keydown", unmuteOnFirstGesture, true);
-        window.addEventListener("touchstart", unmuteOnFirstGesture, true);
+        return best;
+      }
 
-        // Pause when section leaves the viewport, resume focused video when back.
-        // When the section first enters view, optimistically try to play UNMUTED —
-        // if the user has already interacted with the page anywhere, the browser
-        // allows it and sound starts the moment the testimonials appear. If not,
-        // we silently fall back to muted and rely on the first-gesture unlock.
-        function tryUnmutedFocused() {
-          var card = cards[focusedIndex];
-          if (!card) return;
-          var video = card.querySelector("video");
-          if (!video) return;
+      // After scroll settles, if we drifted into the outer thirds, jump back to the
+      // equivalent card in the middle third — invisibly (scroll-behavior: auto).
+      function checkWrap() {
+        if (cards.length < 3 * ORIG_N) return;
+        var centered = findCenteredIndex();
+        var target = null;
+        if (centered < ORIG_N) target = centered + ORIG_N;
+        else if (centered >= 2 * ORIG_N) target = centered - ORIG_N;
+        if (target === null) return;
+        var from = cards[centered].getBoundingClientRect();
+        var to = cards[target].getBoundingClientRect();
+        var delta = to.left - from.left;
+        var prev = stage.style.scrollBehavior;
+        stage.style.scrollBehavior = "auto";
+        stage.scrollLeft += delta;
+        stage.style.scrollBehavior = prev;
+        focusedIndex = target;
+        updateDots();
+      }
+
+      function playFocused() {
+        var card = cards[focusedIndex];
+        if (!card) return;
+        var video = card.querySelector("video");
+        if (!video) return;
+        pauseOthers(card);
+        if (userUnmuted) {
           video.muted = false;
-          var p = video.play();
-          if (p && typeof p.then === "function") {
-            p.then(function () {
-              card.classList.add("is-unmuted", "is-playing");
-              userUnmuted = true;
-            }).catch(function () {
+          card.classList.add("is-unmuted");
+        }
+        var p = video.play();
+        if (p && typeof p.then === "function") {
+          p.then(function () { card.classList.add("is-playing"); })
+            .catch(function () {
+              // Autoplay-with-sound blocked → fall back to muted
               video.muted = true;
               card.classList.remove("is-unmuted");
               video.play().then(function () { card.classList.add("is-playing"); })
-                          .catch(function () {});
+                .catch(function () { /* swallow */ });
             });
+        }
+      }
+
+      function togglePlayFocused() {
+        var card = cards[focusedIndex];
+        if (!card) return;
+        var video = card.querySelector("video");
+        if (!video) return;
+        if (video.paused) playFocused();
+        else { video.pause(); card.classList.remove("is-playing"); }
+      }
+
+      // Build dots — one per card, scroll to that card
+      if (dotsWrap) {
+        dotsWrap.innerHTML = "";
+        for (var i = 0; i < ORIG_N; i++) {
+          (function (origIdx) {
+            var b = document.createElement("button");
+            b.type = "button";
+            b.setAttribute("aria-label", "Go to reel " + (origIdx + 1));
+            b.addEventListener("click", function () { scrollToCard(nearestCopyOf(origIdx)); });
+            dotsWrap.appendChild(b);
+          })(i);
+        }
+      }
+
+      // Card interactions
+      cards.forEach(function (card, i) {
+        var video = card.querySelector("video");
+        var muteBtn = card.querySelector("[data-reel-mute]");
+
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", "Testimonial reel. Press Enter to play.");
+
+        card.addEventListener("click", function (e) {
+          if (muteBtn && (e.target === muteBtn || muteBtn.contains(e.target))) return;
+          if (i !== focusedIndex) scrollToCard(i);
+          else togglePlayFocused();
+        });
+
+        if (muteBtn) {
+          muteBtn.addEventListener("click", function (e) {
+            e.stopPropagation();
+            if (!video) return;
+            video.muted = !video.muted;
+            userUnmuted = !video.muted;
+            card.classList.toggle("is-unmuted", !video.muted);
+          });
+        }
+
+        if (video) {
+          video.addEventListener("pause", function () { card.classList.remove("is-playing"); });
+          video.addEventListener("play", function () { card.classList.add("is-playing"); });
+          video.addEventListener("ended", function () { card.classList.remove("is-playing"); });
+        }
+      });
+
+      // Scroll handler: rAF-throttled focus + debounced wrap check on idle
+      var rafId = 0;
+      var idleTimer = 0;
+      stage.addEventListener("scroll", function () {
+        if (!rafId) {
+          rafId = requestAnimationFrame(function () {
+            rafId = 0;
+            setFocused(findCenteredIndex());
+          });
+        }
+        if (idleTimer) clearTimeout(idleTimer);
+        idleTimer = setTimeout(function () {
+          idleTimer = 0;
+          checkWrap();
+        }, 160);
+      }, { passive: true });
+
+      function updateNav() {
+        // Infinite carousel — arrows are always actionable.
+        if (prevBtn) prevBtn.disabled = false;
+        if (nextBtn) nextBtn.disabled = false;
+      }
+      if (prevBtn) {
+        prevBtn.addEventListener("click", function () {
+          scrollToCard(Math.max(0, focusedIndex - 1));
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener("click", function () {
+          scrollToCard(Math.min(cards.length - 1, focusedIndex + 1));
+        });
+      }
+
+      // Keyboard navigation
+      if (section) {
+        section.addEventListener("keydown", function (e) {
+          if (e.key === "ArrowLeft") { e.preventDefault(); scrollToCard(Math.max(0, focusedIndex - 1)); }
+          else if (e.key === "ArrowRight") { e.preventDefault(); scrollToCard(Math.min(cards.length - 1, focusedIndex + 1)); }
+          else if (e.key === "Enter" || e.key === " ") {
+            if (document.activeElement && document.activeElement.classList && document.activeElement.classList.contains("reel-card")) {
+              e.preventDefault();
+              togglePlayFocused();
+            }
           }
-        }
+        });
+      }
 
-        if (section && "IntersectionObserver" in window) {
-          var visObs = new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) {
-              sectionInView = e.isIntersecting;
-              if (sectionInView) {
-                tryUnmutedFocused();
-              } else {
-                cards.forEach(function (c) {
-                  var v = c.querySelector("video");
-                  if (v && !v.paused) v.pause();
-                  c.classList.remove("is-playing");
-                });
-              }
-            });
-          }, { threshold: 0.15 });
-          visObs.observe(section);
-        }
-
-        var resizeRaf = 0;
-        window.addEventListener("resize", function () {
-          if (resizeRaf) cancelAnimationFrame(resizeRaf);
-          resizeRaf = requestAnimationFrame(function () {
-            snapCenter(focusedIndex);
+      // Initial focus — center of the middle third (the originals), which is the main testimonial.
+      var startIdx = cards.length === 3 * ORIG_N
+        ? ORIG_N + Math.floor(ORIG_N / 2)
+        : (cards.length > 1 ? Math.floor(cards.length / 2) : 0);
+      function init() {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            snapCenter(startIdx);
+            setFocused(startIdx);
+            playFocused();
+            setTimeout(function () {
+              setFocused(findCenteredIndex());
+              playFocused();
+            }, 120);
           });
         });
       }
-      if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initReels);
-      } else {
-        initReels();
+      init();
+
+      // Unmute the focused video on the first user gesture anywhere on the page.
+      // Browsers block unmuted autoplay before user interaction; this flips it
+      // the moment we're allowed to.
+      function unmuteOnFirstGesture() {
+        userUnmuted = true;
+        var c = cards[focusedIndex];
+        if (c) {
+          var v = c.querySelector("video");
+          if (v) {
+            v.muted = false;
+            c.classList.add("is-unmuted");
+            var p = v.play();
+            if (p && typeof p.catch === "function") p.catch(function () { });
+          }
+        }
+        window.removeEventListener("pointerdown", unmuteOnFirstGesture, true);
+        window.removeEventListener("keydown", unmuteOnFirstGesture, true);
+        window.removeEventListener("touchstart", unmuteOnFirstGesture, true);
       }
+      window.addEventListener("pointerdown", unmuteOnFirstGesture, true);
+      window.addEventListener("keydown", unmuteOnFirstGesture, true);
+      window.addEventListener("touchstart", unmuteOnFirstGesture, true);
+
+      // Pause when section leaves the viewport, resume focused video when back.
+      // When the section first enters view, optimistically try to play UNMUTED —
+      // if the user has already interacted with the page anywhere, the browser
+      // allows it and sound starts the moment the testimonials appear. If not,
+      // we silently fall back to muted and rely on the first-gesture unlock.
+      function tryUnmutedFocused() {
+        var card = cards[focusedIndex];
+        if (!card) return;
+        var video = card.querySelector("video");
+        if (!video) return;
+        video.muted = false;
+        var p = video.play();
+        if (p && typeof p.then === "function") {
+          p.then(function () {
+            card.classList.add("is-unmuted", "is-playing");
+            userUnmuted = true;
+          }).catch(function () {
+            video.muted = true;
+            card.classList.remove("is-unmuted");
+            video.play().then(function () { card.classList.add("is-playing"); })
+              .catch(function () { });
+          });
+        }
+      }
+
+      if (section && "IntersectionObserver" in window) {
+        var visObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) {
+            sectionInView = e.isIntersecting;
+            if (sectionInView) {
+              tryUnmutedFocused();
+            } else {
+              cards.forEach(function (c) {
+                var v = c.querySelector("video");
+                if (v && !v.paused) v.pause();
+                c.classList.remove("is-playing");
+              });
+            }
+          });
+        }, { threshold: 0.15 });
+        visObs.observe(section);
+      }
+
+      var resizeRaf = 0;
+      window.addEventListener("resize", function () {
+        if (resizeRaf) cancelAnimationFrame(resizeRaf);
+        resizeRaf = requestAnimationFrame(function () {
+          snapCenter(focusedIndex);
+        });
+      });
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initReels);
+    } else {
+      initReels();
+    }
+
 
   </script>
 </head>
 
 <body>
-<script>
-(function(){
-  var d = document.documentElement, b = document.body;
-  function clamp(){
-    var vw = d.clientWidth || window.innerWidth;
-    d.style.overflowX = 'hidden';
-    b.style.overflowX = 'hidden';
-    b.style.maxWidth = vw + 'px';
-    if (d.scrollWidth > vw) { b.style.width = vw + 'px'; }
-  }
-  if (b) clamp();
-  document.addEventListener('DOMContentLoaded', function(){ b = document.body; clamp(); });
-  window.addEventListener('load', clamp);
-  window.addEventListener('resize', clamp);
-  window.addEventListener('orientationchange', clamp);
-})();
-</script>
+  <script>
+    (function () {
+      var d = document.documentElement, b = document.body;
+      function clamp() {
+        var vw = d.clientWidth || window.innerWidth;
+        d.style.overflowX = 'hidden';
+        b.style.overflowX = 'hidden';
+        b.style.maxWidth = vw + 'px';
+        if (d.scrollWidth > vw) { b.style.width = vw + 'px'; }
+      }
+      if (b) clamp();
+      document.addEventListener('DOMContentLoaded', function () { b = document.body; clamp(); });
+      window.addEventListener('load', clamp);
+      window.addEventListener('resize', clamp);
+      window.addEventListener('orientationchange', clamp);
+    })();
+  </script>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-nav" role="banner">
@@ -4404,7 +4922,9 @@
         <a href="#partners">Partners</a>
         <a href="#reels">Stories</a>
       </nav>
-      <a class="btn btn-primary btn-sm" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">Join now</a>
+      <a class="btn btn-primary btn-sm"
+        href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank"
+        rel="noopener">Join now</a>
     </div>
   </header>
 
@@ -4421,9 +4941,7 @@
       <!-- Ambient floating affiliate cards (reduced + more subtle) -->
       <div class="affiliate-wall" aria-hidden="true">
         <article class="aw-card aw-lg aw-pos-1" data-float="a">
-          <img class="aw-photo"
-            src="assets/partners/Dev Gadhvi.webp"
-            alt="" loading="lazy" />
+          <img class="aw-photo" src="assets/partners/Dev Gadhvi.webp" alt="" loading="lazy" />
           <div class="aw-body">
             <span class="aw-name">Dev Gadhvi</span>
             <span class="aw-niche">Business Coach</span>
@@ -4431,9 +4949,7 @@
           </div>
         </article>
         <article class="aw-card aw-md aw-pos-3" data-float="c">
-          <img class="aw-photo"
-            src="assets/creators/nalini_zizu.jpg"
-            alt="" loading="lazy" />
+          <img class="aw-photo" src="assets/creators/nalini_zizu.jpg" alt="" loading="lazy" />
           <div class="aw-body">
             <span class="aw-name">Nalini Zizu</span>
             <span class="aw-niche">Mindset Coach</span>
@@ -4441,9 +4957,8 @@
           </div>
         </article>
         <article class="aw-card aw-sm aw-pos-6" data-float="b">
-          <img class="aw-photo"
-            src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg"
-            alt="" loading="lazy" />
+          <img class="aw-photo" src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg" alt=""
+            loading="lazy" />
           <div class="aw-body">
             <span class="aw-name">Dr. Shaina Kochar</span>
             <span class="aw-niche">Wellness Coach</span>
@@ -4451,9 +4966,7 @@
           </div>
         </article>
         <article class="aw-card aw-md aw-pos-8" data-float="d">
-          <img class="aw-photo"
-            src="assets/partners/image_u2mjq_600.png"
-            alt="" loading="lazy" />
+          <img class="aw-photo" src="assets/partners/image_u2mjq_600.png" alt="" loading="lazy" />
           <div class="aw-body">
             <span class="aw-name">Amit Singh Moga</span>
             <span class="aw-niche">Business Coach</span>
@@ -4484,7 +4997,9 @@
           </p>
 
           <div class="cta-row">
-            <a class="btn btn-primary btn-lg" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">
+            <a class="btn btn-primary btn-lg"
+              href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank"
+              rel="noopener">
               <span>Join the program</span>
               <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
                 <path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none"
@@ -4564,94 +5079,81 @@
             <p id="trusted-band-title" class="visually-hidden">Selected partners</p>
             <ul class="trusted-icons" aria-label="Selected partners">
               <li class="trusted-icon">
-                <button class="trusted-trigger" type="button" aria-describedby="tt-dev">
-                  <img
-                    src="assets/partners/Dev Gadhvi.webp"
-                    alt="Dev Gadhvi" loading="lazy" />
-                </button>
-                  <span class="trusted-label">Dev Gadhvi</span>
-                  <div class="trusted-tip" id="tt-dev" role="tooltip">
-                  <span class="tt-name">Dev Gadhvi</span>
-                  <span class="tt-role">Business Coach</span>
-                  <span class="tt-rev">₹64,000 earned</span>
-                </div>
-              </li>
-              <li class="trusted-icon">
-                <button class="trusted-trigger" type="button" aria-describedby="tt-shivangi">
-                  <img
-                    src="assets/partners/Shivangi Desai.webp"
-                    alt="Shivangi Desai" loading="lazy" />
-                </button>
-                  <span class="trusted-label">Shivangi Desai</span>
-                  <div class="trusted-tip" id="tt-shivangi" role="tooltip">
-                  <span class="tt-name">Shivangi Desai</span>
-                  <span class="tt-role">Life Coach</span>
-                  <span class="tt-rev">₹39,400 earned</span>
-                </div>
-              </li>
-              <li class="trusted-icon">
-                <button class="trusted-trigger" type="button" aria-describedby="tt-nalini">
-                  <img
-                    src="assets/creators/nalini_zizu.jpg"
-                    alt="Nalini Zizu" loading="lazy" />
-                </button>
-                  <span class="trusted-label">Nalini Zizu</span>
-                  <div class="trusted-tip" id="tt-nalini" role="tooltip">
-                  <span class="tt-name">Nalini Zizu</span>
-                  <span class="tt-role">Mindset Coach</span>
-                  <span class="tt-rev">₹39,400 earned</span>
-                </div>
-              </li>
-              <li class="trusted-icon">
                 <button class="trusted-trigger" type="button" aria-describedby="tt-bodhi">
-                  <img
-                    src="assets/partners/bodhi school of yoga.webp"
-                    alt="Bodhi School of Yoga" loading="lazy" />
+                  <img src="assets/partners/bodhi school of yoga.webp" alt="Bodhi School of Yoga" loading="lazy" />
                 </button>
-                  <span class="trusted-label">Bodhi School of Yoga</span>
-                  <div class="trusted-tip" id="tt-bodhi" role="tooltip">
+                <span class="trusted-label">Bodhi School of Yoga</span>
+                <div class="trusted-tip" id="tt-bodhi" role="tooltip">
                   <span class="tt-name">Bodhi School of Yoga</span>
                   <span class="tt-role">Yoga Trainer</span>
                   <span class="tt-rev">₹28,100 earned</span>
                 </div>
               </li>
               <li class="trusted-icon">
-                <button class="trusted-trigger" type="button" aria-describedby="tt-sneh">
-                  <img
-                    src="assets/partners/sneh desai.jpg"
-                    alt="Sneh Desai" loading="lazy" />
+                <button class="trusted-trigger" type="button" aria-describedby="tt-shivangi">
+                  <img src="assets/partners/Shivangi Desai.webp" alt="Shivangi Desai" loading="lazy" />
                 </button>
-                  <span class="trusted-label">Sneh Desai</span>
-                  <div class="trusted-tip" id="tt-sneh" role="tooltip">
+                <span class="trusted-label">Shivangi Desai</span>
+                <div class="trusted-tip" id="tt-shivangi" role="tooltip">
+                  <span class="tt-name">Shivangi Desai</span>
+                  <span class="tt-role">Life Coach</span>
+                  <span class="tt-rev">₹39,400 earned</span>
+                </div>
+              </li>
+              <li class="trusted-icon">
+                <button class="trusted-trigger" type="button" aria-describedby="tt-dev">
+                  <img src="assets/partners/Dev Gadhvi.webp" alt="Dev Gadhvi" loading="lazy" />
+                </button>
+                <span class="trusted-label">Dev Gadhvi</span>
+                <div class="trusted-tip" id="tt-dev" role="tooltip">
+                  <span class="tt-name">Dev Gadhvi</span>
+                  <span class="tt-role">Business Coach</span>
+                  <span class="tt-rev">₹64,000 earned</span>
+                </div>
+              </li>
+              <li class="trusted-icon">
+                <button class="trusted-trigger" type="button" aria-describedby="tt-sneh">
+                  <img src="assets/partners/sneh desai.jpg" alt="Sneh Desai" loading="lazy" />
+                </button>
+                <span class="trusted-label">Sneh Desai</span>
+                <div class="trusted-tip" id="tt-sneh" role="tooltip">
                   <span class="tt-name">Sneh Desai</span>
                   <span class="tt-role">Affiliate Partner</span>
                   <span class="tt-rev">₹22,500 earned</span>
                 </div>
               </li>
-              <li class="trusted-icon">
-                <button class="trusted-trigger" type="button" aria-describedby="tt-shaina">
-                  <img
-                    src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg"
-                    alt="Dr. Shaina Kochar" loading="lazy" />
-                </button>
-                  <span class="trusted-label">Dr. Shaina Kochar</span>
-                  <div class="trusted-tip" id="tt-shaina" role="tooltip">
-                  <span class="tt-name">Dr. Shaina Kochar</span>
-                  <span class="tt-role">Wellness Coach</span>
-                  <span class="tt-rev">₹47,800 earned</span>
-                </div>
-              </li>
               <li class="trusted-icon is-fit">
                 <button class="trusted-trigger" type="button" aria-describedby="tt-doctor">
-                  <img
-                    src="assets/partners/doctorprenuer_academy.png"
-                    alt="Doctorpreneur Academy" loading="lazy" />
+                  <img src="assets/partners/doctorprenuer_academy.png" alt="Doctorpreneur Academy" loading="lazy" />
                 </button>
-                  <span class="trusted-label">Doctorpreneur Academy</span>
-                  <div class="trusted-tip" id="tt-doctor" role="tooltip">
+                <span class="trusted-label">Doctorpreneur Academy</span>
+                <div class="trusted-tip" id="tt-doctor" role="tooltip">
                   <span class="tt-name">Doctorpreneur Academy</span>
                   <span class="tt-role">Medical Coach</span>
                   <span class="tt-rev">₹52,300 earned</span>
+                </div>
+              </li>
+              <li class="trusted-icon is-logo">
+                <button class="trusted-trigger" type="button" aria-describedby="tt-healthify">
+                  <img src="assets/partners/healthify institute.webp" alt="Healthify Institute" loading="lazy" />
+                </button>
+                <span class="trusted-label">Healthify Institute</span>
+                <div class="trusted-tip" id="tt-healthify" role="tooltip">
+                  <span class="tt-name">Healthify Institute</span>
+                  <span class="tt-role">Health &amp; Wellness</span>
+                  <span class="tt-rev">₹35,200 earned</span>
+                </div>
+              </li>
+              <li class="trusted-icon">
+                <button class="trusted-trigger" type="button" aria-describedby="tt-shaina">
+                  <img src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg" alt="Dr. Shaina Kochar"
+                    loading="lazy" />
+                </button>
+                <span class="trusted-label">Dr. Shaina Kochar</span>
+                <div class="trusted-tip" id="tt-shaina" role="tooltip">
+                  <span class="tt-name">Dr. Shaina Kochar</span>
+                  <span class="tt-role">Wellness Coach</span>
+                  <span class="tt-rev">₹47,800 earned</span>
                 </div>
               </li>
               <li class="trusted-more" aria-hidden="true">+50</li>
@@ -4726,7 +5228,8 @@
         <p class="why-sub">Partner with us and unlock serious earning potential while providing real value to your
           community.</p>
 
-        <a class="btn why-cta" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">Apply to Be an Exly Affiliate</a>
+        <a class="btn why-cta" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da"
+          target="_blank" rel="noopener">Apply to Be an Exly Affiliate</a>
 
         <ul class="why-cards">
           <li class="why-card">
@@ -4739,14 +5242,12 @@
                     stroke-linejoin="round" />
                 </svg>
               </span>
-              <h3 class="why-card-title">Boost Your Image</h3>
+              <h3 class="why-card-title">Grow Your Brand</h3>
             </div>
-            <p class="why-card-body">Stand alongside India's top creators. Co-branded launches, premium PR placements,
-              and stage moments that lift your authority.</p>
+            <p class="why-card-body">Stand with India's biggest creators. We put you in launches, press features, and
+              live events so more people know who you are.</p>
             <div class="why-card-reveal" aria-hidden="true">
-              <img
-                src="assets/embedded/6f7f6954de9fdf2ef6694c4de531c8bf791d772d.jpg"
-                alt="" loading="lazy" />
+              <img src="assets/embedded/6f7f6954de9fdf2ef6694c4de531c8bf791d772d.jpg" alt="" loading="lazy" />
               <span class="why-card-reveal-cap">Creator meetups · Stage features</span>
             </div>
           </li>
@@ -4754,15 +5255,19 @@
           <li class="why-card">
             <div class="why-card-head">
               <span class="why-card-ico" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="20" height="20">
-                  <path d="M12 3v18M7 7h7a3 3 0 010 6H9a3 3 0 000 6h8" stroke="currentColor" stroke-width="2"
-                    fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 3h12" />
+                  <path d="M6 8h12" />
+                  <path d="M6 13h3" />
+                  <path d="M9 13c6.667 0 6.667-10 0-10" />
+                  <path d="M6 13l8.5 8" />
                 </svg>
               </span>
-              <h3 class="why-card-title">Serious Commissions</h3>
+              <h3 class="why-card-title">Real Earnings</h3>
             </div>
-            <p class="why-card-body">Upfront payouts, recurring monthly income, and renewal bonuses. Earn from the first
-              sale and keep earning every time they stay.</p>
+            <p class="why-card-body">Earn from day one. Every sign-up pays you, and you keep getting paid every month
+              they stay on Exly.</p>
             <div class="why-card-reveal why-card-reveal-chart" aria-hidden="true">
               <div class="why-chart">
                 <span class="why-chart-bar" style="--h:35%"></span>
@@ -4787,20 +5292,14 @@
                     stroke-width="2" fill="none" stroke-linecap="round" />
                 </svg>
               </span>
-              <h3 class="why-card-title">Real Impact</h3>
+              <h3 class="why-card-title">We Do The Work</h3>
             </div>
-            <p class="why-card-body">Done-for-you funnels, launches, and support — so the creators you refer actually
-              win. Your community gets results, you get credited.</p>
+            <p class="why-card-body">We build the funnels, run the launches, and handle support. The creators you bring
+              actually win, and you get the credit.</p>
             <div class="why-card-reveal why-card-reveal-collage" aria-hidden="true">
-              <img
-                src="assets/embedded/c4e2d924b2a07cb49a7dedde8c8ba23d74a47139.jpg"
-                alt="" loading="lazy" />
-              <img
-                src="assets/embedded/315b6d4dc94b84a6537c24ecec1b0a1efb8f8652.jpg"
-                alt="" loading="lazy" />
-              <img
-                src="assets/embedded/6bf23298476596e6a47e8616000e60953bce3b0c.jpg"
-                alt="" loading="lazy" />
+              <img src="assets/embedded/c4e2d924b2a07cb49a7dedde8c8ba23d74a47139.jpg" alt="" loading="lazy" />
+              <img src="assets/embedded/315b6d4dc94b84a6537c24ecec1b0a1efb8f8652.jpg" alt="" loading="lazy" />
+              <img src="assets/embedded/6bf23298476596e6a47e8616000e60953bce3b0c.jpg" alt="" loading="lazy" />
               <span class="why-card-reveal-cap">Community workshops · Group launches</span>
             </div>
           </li>
@@ -4813,37 +5312,38 @@
       <div class="container">
         <p class="eyebrow">For creators, coaches, and community leaders whose audiences are ready for the next step</p>
         <h2 id="how-heading" class="section-heading">From first call to first commission, in <em>under a week.</em></h2>
-        <p class="section-sub">A clear, low-friction process — no long contracts, no minimum commitments. This isn't a
+        <p class="section-sub">A clear, low-friction process with no long contracts and no minimum commitments. This
+          isn't a
           referral link. It's a long-term partnership.</p>
 
         <ol class="steps">
           <li class="step">
             <div class="step-num">01</div>
             <div class="step-day">Day 1</div>
-            <h3 class="step-title">Discovery</h3>
-            <p class="step-body">A 30-minute call with our partnerships team. We understand your community, audience
-              size, and growth goals.</p>
+            <h3 class="step-title">First Call</h3>
+            <p class="step-body">A quick 30-minute call. We learn about you, your community, and what you want to
+              grow.</p>
           </li>
           <li class="step">
             <div class="step-num">02</div>
             <div class="step-day">Day 2 – 3</div>
-            <h3 class="step-title">Onboarding</h3>
-            <p class="step-body">You receive a tracked referral link, a creative kit with ready-to-publish assets, and
-              access to your live earnings dashboard.</p>
+            <h3 class="step-title">Setup</h3>
+            <p class="step-body">You get your own referral link, ready-to-post content, and a live dashboard to track
+              your earnings.</p>
           </li>
           <li class="step">
             <div class="step-num">03</div>
             <div class="step-day">Day 4 – 7</div>
-            <h3 class="step-title">Activation</h3>
-            <p class="step-body">We help you position the offer, choose the right support track for your community, and
-              launch the first campaign together.</p>
+            <h3 class="step-title">Launch</h3>
+            <p class="step-body">We help you pick the right plan, share it with your community, and run your first
+              campaign together.</p>
           </li>
           <li class="step">
             <div class="step-num">04</div>
             <div class="step-day">Week 2 onward</div>
-            <h3 class="step-title">Ongoing</h3>
-            <p class="step-body">Weekly payouts. Monthly reviews. A dedicated partnerships manager for as long as you're
-              with us.</p>
+            <h3 class="step-title">Ongoing Support</h3>
+            <p class="step-body">Get paid every week. Monthly check-ins. A dedicated partnerships manager with you the
+              whole way.</p>
           </li>
         </ol>
 
@@ -4857,28 +5357,28 @@
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                Funnels, ads, sprints, content — based on the track you pick
+                Everything: funnels, ads, content, and launches built for your track
               </li>
               <li>
                 <span class="resp-check" aria-hidden="true"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                Onboarding your referrals onto Exly
+                Getting your referrals signed up on Exly
               </li>
               <li>
                 <span class="resp-check" aria-hidden="true"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                Customer support, retention, and renewals
+                Customer support, keeping people happy, and renewals
               </li>
               <li>
                 <span class="resp-check" aria-hidden="true"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                Reporting, payouts, and full transparency
+                Clear reports, payouts, and full transparency
               </li>
             </ul>
           </div>
@@ -4892,14 +5392,14 @@
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                The introduction
+                Introduce us to your audience
               </li>
               <li>
                 <span class="resp-check" aria-hidden="true"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"
                     stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="3 8 7 12 13 4" />
                   </svg></span>
-                Authentic positioning to your community
+                Telling your community why you trust us
               </li>
               <li>
                 <span class="resp-check" aria-hidden="true"><svg viewBox="0 0 16 16" width="11" height="11" fill="none"
@@ -4911,16 +5411,6 @@
             </ul>
           </div>
         </div>
-
-        <div class="how-cta-row">
-          <a class="btn btn-primary btn-lg" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">
-            <span>Start a partnership</span>
-            <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
-              <path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -4931,58 +5421,65 @@
           <em>community.</em>
         </h2>
         <p class="section-sub center tracks-sub">Each track is built for a different stage of community growth. Choose
-          one — or combine — based on what your members need most.</p>
+          one, or combine them, based on what your members need most.</p>
 
         <ul class="tracks-row">
           <li class="track">
             <span class="track-icon-wrap" aria-hidden="true">
-              <svg class="track-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+              <svg class="track-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </span>
-            <h3 class="track-title">Done-for-you setup</h3>
-            <span class="track-pill">For launchers</span>
+            <h3 class="track-title">Done-for-you</h3>
+            <span class="track-pill">Full launch stack</span>
             <p class="track-tag">For communities ready to launch but stuck on the tech.</p>
-            <p class="track-body">Funnels, bookings, and automation — built and handed over.</p>
+            <p class="track-body">The full stack of funnels, bookings, automations, and integrations, built, made live,
+              and handed over to you.</p>
           </li>
           <li class="track">
-            <span class="track-icon-wrap track-icon-wrap--meta" aria-hidden="true"><img loading="lazy" decoding="async" class="track-icon track-icon--meta" alt="" src="assets/embedded/ff70aaccbb6e8d0cdfd713b2d6201f54c202c51b.png" /></span>
-            <h3 class="track-title">Paid growth support</h3>
-            <span class="track-pill">Powered by Meta Ads</span>
-            <p class="track-tag">For communities with the product, not the reach.</p>
-            <p class="track-body">Managed Meta ad campaigns that fill their seats, run by our growth team.</p>
-          </li>
-          <li class="track">
-            <span class="track-icon-wrap" aria-hidden="true">
-              <svg class="track-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-              </svg>
-            </span>
-            <h3 class="track-title">Launch sprints</h3>
-            <span class="track-pill">For momentum builders</span>
-            <p class="track-tag">We've built businesses — now we'll train your community too.</p>
-            <p class="track-body">Bootcamps and kickoffs with a full roadmap, so your community launches with direction, not guesswork.</p>
+            <span class="track-icon-wrap track-icon-wrap--meta" aria-hidden="true"><img loading="lazy" decoding="async"
+                class="track-icon track-icon--meta" alt=""
+                src="assets/embedded/ff70aaccbb6e8d0cdfd713b2d6201f54c202c51b.png" /></span>
+            <h3 class="track-title">Done-for-you Plus</h3>
+            <span class="track-pill">We run the paid ads</span>
+            <p class="track-tag">Everything in Done-for-you, plus paid reach to fill the seats.</p>
+            <p class="track-body">Our growth team runs managed Meta ad campaigns on top of the full setup, so traffic
+              lands on infrastructure that's already built to convert.</p>
           </li>
           <li class="track">
             <span class="track-icon-wrap" aria-hidden="true">
-              <svg class="track-icon" viewBox="0 0 24 24">
-                <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8" fill="none" />
-                <path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              <svg class="track-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22V11" />
+                <path d="M12 11C8 11 5.5 8.5 5.5 4.5 9.5 4.5 12 7 12 11Z" />
+                <path d="M12 14c4 0 6.5-2.5 6.5-6.5-4 0-6.5 2.5-6.5 6.5Z" />
               </svg>
             </span>
-            <h3 class="track-title">Content playbook</h3>
-            <span class="track-pill">For consistent creators</span>
-            <p class="track-tag">We first understand your community, then hand you a framework to go live with full confidence.</p>
-            <p class="track-body">Custom content strategy, daily social plans — written for your niche, ready to execute.</p>
+            <h3 class="track-title">Organic growth</h3>
+            <span class="track-pill">Community + content</span>
+            <p class="track-tag">Easy-to-follow training sessions and launch support.</p>
+            <p class="track-body">A clear step-by-step plan, a content strategy tailored to your niche, and daily social
+              media posting ideas to help you grow consistently.</p>
           </li>
         </ul>
 
         <p class="tracks-footnote">Not sure which fits? Your partnerships manager will help match the right track to
           your community.</p>
+
+        <div class="how-cta-row">
+          <a class="btn btn-on-dark btn-lg"
+            href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank"
+            rel="noopener">
+            <span>Start a partnership</span>
+            <svg class="btn-arrow" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true">
+              <path d="M2 8h11M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -4993,55 +5490,78 @@
         <h2 id="creators-marquee-heading" class="creators-marquee-heading">India's top creators run their business on
           <em>Exly.</em>
         </h2>
-        <p class="section-sub">From yoga to business coaches, doctors to digital marketers — the best in every niche
+        <p class="section-sub">From yoga to business coaches and doctors to digital marketers, the best in every niche
           choose Exly.</p>
       </div>
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/sneh desai.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Sneh Desai</span><span class="creator-niche">Life Coach</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/Shivangi Desai.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Shivangi Desai</span><span class="creator-niche">Wellness</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/Dev Gadhvi.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Dev Gadhvi</span><span class="creator-niche">Business</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/bodhi school of yoga.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Bodhi School of Yoga</span><span class="creator-niche">Yoga</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Dr. Shaina Kochar</span><span class="creator-niche">Occult</span></article>
-          <article class="creator-circle is-fit"><span class="creator-photo"><img
-              src="assets/partners/doctorprenuer_academy.png"
-              alt="" loading="lazy" /></span><span class="creator-name">Doctorpreneur Academy</span><span class="creator-niche">Medical</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/sneh desai.jpg" alt=""
+                loading="lazy" /></span><span class="creator-name">Sneh Desai</span><span class="creator-niche">Life
+              Coach</span></article>
           <article class="creator-circle is-logo"><span class="creator-photo"><img
-              src="assets/embedded/c669d4cd732256e16c395980020710db7238ee44.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Healthyfy</span><span class="creator-niche">Fitness</span></article>
+                src="assets/partners/Deep Parenting.jpg" alt="" loading="lazy" /></span><span class="creator-name">Deep
+              Parenting</span><span class="creator-niche">Parenting</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/Shivangi Desai.webp"
+                alt="" loading="lazy" /></span><span class="creator-name">Shivangi Desai</span><span
+              class="creator-niche">Wellness Coach</span></article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/embedded/c669d4cd732256e16c395980020710db7238ee44.jpg" alt="" loading="lazy" /></span><span
+              class="creator-name">Healthyfy</span><span class="creator-niche">Fitness</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/Dev Gadhvi.webp" alt=""
+                loading="lazy" /></span><span class="creator-name">Dev Gadhvi</span><span class="creator-niche">Business
+              Coach</span></article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/partners/Counsellor Council of India.jpeg" alt="" loading="lazy" /></span><span
+              class="creator-name">Counsellor Council of India</span><span class="creator-niche">Counselling</span>
+          </article>
+          <article class="creator-circle"><span class="creator-photo"><img
+                src="assets/partners/bodhi school of yoga.webp" alt="" loading="lazy" /></span><span
+              class="creator-name">Bodhi School of Yoga</span><span class="creator-niche">Yoga Institute</span>
+          </article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/partners/Morarji Desai Institute of Yoga .png" alt="" loading="lazy" /></span><span
+              class="creator-name">Morarji Desai Institute of Yoga</span><span class="creator-niche">Yoga
+              Institute</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img
+                src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg" alt="" loading="lazy" /></span><span
+              class="creator-name">Dr. Shaina Kochar</span><span class="creator-niche">Occult</span></article>
+          <article class="creator-circle is-fit"><span class="creator-photo"><img
+                src="assets/partners/doctorprenuer_academy.png" alt="" loading="lazy" /></span><span
+              class="creator-name">Doctorpreneur Academy</span><span class="creator-niche">Medical</span></article>
           <!-- duplicate set for seamless loop -->
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/sneh desai.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Sneh Desai</span><span class="creator-niche">Life Coach</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/Shivangi Desai.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Shivangi Desai</span><span class="creator-niche">Wellness</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/Dev Gadhvi.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Dev Gadhvi</span><span class="creator-niche">Business</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/partners/bodhi school of yoga.webp"
-              alt="" loading="lazy" /></span><span class="creator-name">Bodhi School of Yoga</span><span class="creator-niche">Yoga</span></article>
-          <article class="creator-circle"><span class="creator-photo"><img
-              src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Dr. Shaina Kochar</span><span class="creator-niche">Occult</span></article>
-          <article class="creator-circle is-fit"><span class="creator-photo"><img
-              src="assets/partners/doctorprenuer_academy.png"
-              alt="" loading="lazy" /></span><span class="creator-name">Doctorpreneur Academy</span><span class="creator-niche">Medical</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/sneh desai.jpg" alt=""
+                loading="lazy" /></span><span class="creator-name">Sneh Desai</span><span class="creator-niche">Life
+              Coach</span></article>
           <article class="creator-circle is-logo"><span class="creator-photo"><img
-              src="assets/embedded/c669d4cd732256e16c395980020710db7238ee44.jpg"
-              alt="" loading="lazy" /></span><span class="creator-name">Healthyfy</span><span class="creator-niche">Fitness</span></article>
+                src="assets/partners/Deep Parenting.jpg" alt="" loading="lazy" /></span><span class="creator-name">Deep
+              Parenting</span><span class="creator-niche">Parenting</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/Shivangi Desai.webp"
+                alt="" loading="lazy" /></span><span class="creator-name">Shivangi Desai</span><span
+              class="creator-niche">Wellness</span></article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/embedded/c669d4cd732256e16c395980020710db7238ee44.jpg" alt="" loading="lazy" /></span><span
+              class="creator-name">Healthyfy</span><span class="creator-niche">Fitness</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img src="assets/partners/Dev Gadhvi.webp" alt=""
+                loading="lazy" /></span><span class="creator-name">Dev Gadhvi</span><span
+              class="creator-niche">Business</span></article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/partners/Counsellor Council of India.jpeg" alt="" loading="lazy" /></span><span
+              class="creator-name">Counsellor Council of India</span><span class="creator-niche">Counselling</span>
+          </article>
+          <article class="creator-circle"><span class="creator-photo"><img
+                src="assets/partners/bodhi school of yoga.webp" alt="" loading="lazy" /></span><span
+              class="creator-name">Bodhi School of Yoga</span><span class="creator-niche">Yoga</span></article>
+          <article class="creator-circle is-logo"><span class="creator-photo"><img
+                src="assets/partners/Morarji Desai Institute of Yoga .png" alt="" loading="lazy" /></span><span
+              class="creator-name">Morarji Desai Institute of Yoga</span><span class="creator-niche">Yoga
+              Institute</span></article>
+          <article class="creator-circle"><span class="creator-photo"><img
+                src="assets/embedded/88374a1e67dd980f343e99138810cc1ef115ba17.jpg" alt="" loading="lazy" /></span><span
+              class="creator-name">Dr. Shaina Kochar</span><span class="creator-niche">Occult</span></article>
+          <article class="creator-circle is-fit"><span class="creator-photo"><img
+                src="assets/partners/doctorprenuer_academy.png" alt="" loading="lazy" /></span><span
+              class="creator-name">Doctorpreneur Academy</span><span class="creator-niche">Medical</span></article>
         </div>
       </div>
 
@@ -5078,27 +5598,46 @@
     <section id="reels" class="reels" aria-labelledby="reels-heading">
       <div class="container">
         <div class="reels-head">
-          <p class="creators-eyebrow reels-eyebrow"><span class="eyebrow-bar" aria-hidden="true"></span>Creator stories</p>
-          <h2 id="reels-heading" class="section-heading center">Don't just take our word for it.</h2>
-          <p class="section-sub center">Real educators. Real results. Straight from the people inside their communities.</p>
+          <p class="creators-eyebrow reels-eyebrow"><span class="eyebrow-bar" aria-hidden="true"></span>Partner outcomes
+          </p>
+          <h2 id="reels-heading" class="section-heading center">Proof, in their own words.</h2>
+          <p class="section-sub center">Verified results from the educators, coaches, and creators running their
+            businesses on Exly.</p>
         </div>
       </div>
 
       <div class="reels-stage-wrap">
         <button class="reels-nav prev" type="button" aria-label="Previous reel" data-reels-prev>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
         </button>
         <button class="reels-nav next" type="button" aria-label="Next reel" data-reels-next>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+            stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
         </button>
 
         <div class="reels-stage" data-reels-stage>
           <article class="reel-card" data-reel-card data-index="0">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_3.jpg" src="assets/testimonials/testimonials%203.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_3.jpg"
+                src="assets/testimonials/testimonials%203.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5107,21 +5646,47 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="1">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_2.jpg" src="assets/testimonials/testimonials%202.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_2.jpg"
+                src="assets/testimonials/testimonials%202.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5130,21 +5695,47 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="2">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonial_4.jpg" src="assets/testimonials/testimonial%204.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonial_4.jpg"
+                src="assets/testimonials/testimonial%204.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5153,21 +5744,48 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="3">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/main_testimonial_really_important_client.jpg" src="assets/testimonials/main%20testimonial....%28really%20important%20client%29.mp4"></video>
+              <video preload="none" playsinline muted loop
+                poster="assets/testimonials/posters/main_testimonial_really_important_client.jpg"
+                src="assets/testimonials/main%20testimonial....%28really%20important%20client%29.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5175,23 +5793,49 @@
               </div>
               <div class="reel-overlay">
                 <div class="reel-overlay-name">Bodhi School of Yoga</div>
-                <div class="reel-overlay-role">Exly Affiliate</div>
+                <div class="reel-overlay-role">Founder</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="4">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_5.jpg" src="assets/testimonials/testimonials%205.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_5.jpg"
+                src="assets/testimonials/testimonials%205.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5200,21 +5844,47 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="5">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_6.jpg" src="assets/testimonials/testimonials%206.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_6.jpg"
+                src="assets/testimonials/testimonials%206.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5223,21 +5893,47 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
           </article>
           <article class="reel-card" data-reel-card data-index="6">
             <div class="reel-media">
-              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_7.jpg" src="assets/testimonials/testimonials%207.mp4"></video>
+              <video preload="none" playsinline muted loop poster="assets/testimonials/posters/testimonials_7.jpg"
+                src="assets/testimonials/testimonials%207.mp4"></video>
               <button class="reel-mute" type="button" aria-label="Toggle sound" data-reel-mute>
-                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
-                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <line x1="23" y1="9" x2="17" y2="15"></line>
+                  <line x1="17" y1="9" x2="23" y2="15"></line>
+                </svg>
+                <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
               </button>
               <div class="reel-play" aria-hidden="true">
                 <span class="play-pulse"></span>
@@ -5246,11 +5942,26 @@
               <div class="reel-overlay">
                 <div class="reel-overlay-role">Exly Affiliate</div>
                 <div class="reel-stars" aria-label="5 stars">
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                  <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                  <svg viewBox="0 0 24 24">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
                 </div>
               </div>
             </div>
@@ -5261,19 +5972,24 @@
       </div>
 
       <div class="reels-foot">
-        <p>Their community grew. <em>So did their income.</em></p>
+        <p>Their communities scaled. <em>Their revenue followed.</em></p>
+        <p class="reels-foot-sub">Verified outcomes from 100+ Exly partners across yoga, wellness, business, parenting,
+          and more.</p>
       </div>
     </section>
 
     <!-- 05 — FINAL CTA -->
     <section id="final-cta" class="final-cta" aria-labelledby="final-heading">
       <div class="container final-cta-inner">
+        <img class="final-cta-logo" src="assets/embedded/6f7f6954de9fdf2ef6694c4de531c8bf791d772d.jpg" alt="Exly"
+          width="72" height="72" loading="lazy" decoding="async" />
         <h2 id="final-heading" class="section-heading center on-dark">Partner with <em>Exly.</em></h2>
         <p class="final-sub">Earn from the first creator you onboard. Keep earning every time they renew.</p>
 
         <div class="cta-row center">
-          <a class="btn btn-on-dark btn-lg" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">Book a 1-on-1 with our partnerships team</a>
-          <a class="btn btn-outline-on-dark btn-lg" href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank" rel="noopener">Apply now</a>
+          <a class="btn btn-on-dark btn-lg"
+            href="https://affiliate.exlyapp.com/checkout/785dd75e-a3e8-4ba8-a700-d1114865d7da" target="_blank"
+            rel="noopener">Book a 1-on-1 with our partnerships team</a>
         </div>
 
         <p class="final-note">30 minutes. We'll walk through the platform, your community fit, and answer every

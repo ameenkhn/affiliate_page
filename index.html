@@ -4269,15 +4269,19 @@
 
         // One unified path for all widths: the CSS keyframe animation drives the
         // auto-scroll (transform-based, GPU-composited — reliable on iOS, unlike
-        // programmatic scrollLeft), and pointer events handle drag-to-pan on both
-        // mouse and touch.
+        // programmatic scrollLeft). Mouse drag uses pointer events; touch swipe uses
+        // dedicated touch events with axis-locking so a horizontal swipe pans the
+        // strip (and we preventDefault to keep the browser from stealing it) while a
+        // vertical swipe still scrolls the page.
         var DURATION = 10; // seconds — must match CSS animation duration
         var dragging = false;
         var pointerId = null;
         var startX = 0;
+        var startY = 0;
         var startOffset = 0; // px translateX at drag start (negative as track moves left)
         var currentOffset = 0;
         var moved = 0;
+        var axis = null; // 'x' once we lock to a horizontal swipe, 'y' for vertical (bail)
 
         function halfWidth() {
           return track.getBoundingClientRect().width / 2;
@@ -4293,23 +4297,31 @@
           return parts.length === 6 ? parts[4] : parts[12];
         }
 
-        marquee.addEventListener("pointerdown", function (e) {
+        function beginDrag(x, y) {
           dragging = true;
           moved = 0;
-          pointerId = e.pointerId;
-          startX = e.clientX;
+          axis = null;
+          startX = x;
+          startY = y;
           startOffset = readCurrentTranslateX();
           currentOffset = startOffset;
           // Freeze the track at its current visual position, then disable animation.
           track.style.transform = "translate3d(" + startOffset + "px, 0, 0)";
           track.style.animation = "none";
           marquee.classList.add("is-dragging");
-          try { marquee.setPointerCapture(pointerId); } catch (err) { }
-        });
+        }
 
-        marquee.addEventListener("pointermove", function (e) {
-          if (!dragging) return;
-          var dx = e.clientX - startX;
+        // Returns true if the move was consumed as a horizontal pan (caller should
+        // preventDefault to stop the page/browser from also scrolling).
+        function moveDrag(x, y) {
+          if (!dragging) return false;
+          var dx = x - startX;
+          var dy = y - startY;
+          if (!axis) {
+            if (Math.abs(dx) < 6 && Math.abs(dy) < 6) return false; // below threshold
+            axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+            if (axis === "y") { resumeFrom(currentOffset); dragging = false; return false; }
+          }
           moved = Math.max(moved, Math.abs(dx));
           var half = halfWidth();
           var next = startOffset + dx;
@@ -4320,21 +4332,15 @@
           }
           currentOffset = next;
           track.style.transform = "translate3d(" + next + "px, 0, 0)";
-        });
+          return true;
+        }
 
-        function endDrag() {
-          if (!dragging) return;
-          dragging = false;
+        // Resume the CSS animation from a given offset via a negative animation-delay.
+        function resumeFrom(offset) {
           marquee.classList.remove("is-dragging");
-          if (pointerId !== null) {
-            try { marquee.releasePointerCapture(pointerId); } catch (err) { }
-            pointerId = null;
-          }
-          // Resume the CSS animation from the dragged-to position by computing a
-          // negative animation-delay that corresponds to currentOffset.
           var half = halfWidth();
           if (half) {
-            var progress = (-currentOffset) / half; // 0..1
+            var progress = (-offset) / half; // 0..1
             if (progress < 0) progress = 0;
             if (progress >= 1) progress = progress - Math.floor(progress);
             track.style.transform = "";
@@ -4346,9 +4352,54 @@
           }
         }
 
-        marquee.addEventListener("pointerup", endDrag);
-        marquee.addEventListener("pointercancel", endDrag);
-        marquee.addEventListener("lostpointercapture", endDrag);
+        function endDrag() {
+          if (!dragging) return;
+          dragging = false;
+          if (pointerId !== null) {
+            try { marquee.releasePointerCapture(pointerId); } catch (err) { }
+            pointerId = null;
+          }
+          resumeFrom(currentOffset);
+        }
+
+        // --- Mouse / non-touch pointers ---
+        marquee.addEventListener("pointerdown", function (e) {
+          if (e.pointerType === "touch") return; // touch handled below
+          pointerId = e.pointerId;
+          beginDrag(e.clientX, e.clientY);
+          try { marquee.setPointerCapture(pointerId); } catch (err) { }
+        });
+        marquee.addEventListener("pointermove", function (e) {
+          if (e.pointerType === "touch") return;
+          moveDrag(e.clientX, e.clientY);
+        });
+        marquee.addEventListener("pointerup", function (e) {
+          if (e.pointerType === "touch") return;
+          endDrag();
+        });
+        marquee.addEventListener("pointercancel", function (e) {
+          if (e.pointerType === "touch") return;
+          endDrag();
+        });
+        marquee.addEventListener("lostpointercapture", function (e) {
+          if (e.pointerType === "touch") return;
+          endDrag();
+        });
+
+        // --- Touch ---
+        marquee.addEventListener("touchstart", function (e) {
+          if (e.touches.length !== 1) return;
+          beginDrag(e.touches[0].clientX, e.touches[0].clientY);
+        }, { passive: true });
+        marquee.addEventListener("touchmove", function (e) {
+          var t = e.touches[0];
+          if (moveDrag(t.clientX, t.clientY)) {
+            // Horizontal pan — stop the browser from scrolling the page.
+            if (e.cancelable) e.preventDefault();
+          }
+        }, { passive: false });
+        marquee.addEventListener("touchend", endDrag, { passive: true });
+        marquee.addEventListener("touchcancel", endDrag, { passive: true });
 
         // Suppress click after a real drag so we don't trigger child interactions
         marquee.addEventListener("click", function (e) {

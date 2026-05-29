@@ -2958,7 +2958,7 @@
       display: flex;
       gap: 36px;
       width: max-content;
-      animation: creators-scroll 16s linear infinite;
+      animation: creators-scroll 10s linear infinite;
       will-change: transform;
     }
 
@@ -4271,7 +4271,7 @@
         // auto-scroll (transform-based, GPU-composited — reliable on iOS, unlike
         // programmatic scrollLeft), and pointer events handle drag-to-pan on both
         // mouse and touch.
-        var DURATION = 16; // seconds — must match CSS animation duration
+        var DURATION = 10; // seconds — must match CSS animation duration
         var dragging = false;
         var pointerId = null;
         var startX = 0;
